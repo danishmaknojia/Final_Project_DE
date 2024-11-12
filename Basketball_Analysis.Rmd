@@ -1,0 +1,335 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-11-07"
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+cbb <- read_csv("cbb.csv")
+```
+
+```{r}
+glimpse(cbb)
+```
+
+Let us format the code better: - We will create a numeric row for Post Season finish so that we can use it for our regression models later on. - We will take the total average turnover per team i.e. defensive turnovers - offensive turnovers. If this is -ve it shows that a team is not good at guarding the ball and if positive it shows it pressures the opponenet well to force mistakes or errors in their play.
+
+```{r}
+cbb <- cbb %>%
+  mutate(POSTSEASON_FINISH =
+           case_when(
+             POSTSEASON == "Champions" ~ 1,
+             POSTSEASON == "2ND" ~ 2,
+             POSTSEASON == "F4" ~ 3,
+             POSTSEASON == "E8" ~ 4,
+             POSTSEASON == "S16" ~ 5,
+             POSTSEASON == "R32" ~ 6,
+             POSTSEASON == "R64" ~ 7,
+             POSTSEASON == "R68" ~ 8,
+             TRUE                      ~ 0 
+           )) %>%
+  mutate(Turnover_diff = TORD - TOR) 
+cbb$SEED <- replace_na(as.numeric(cbb$SEED), 0)
+```
+
+Lets keep the columns that we are interested in part of the our new dataframe
+
+```{r}
+cbb_selected_columns <- cbb %>%
+  select(c("TEAM", "CONF", "ADJOE", "ADJDE", "POSTSEASON", "POSTSEASON_FINISH", "Turnover_diff", "WAB", "SEED"))
+```
+
+Let us group by post season finish to understand what are the average metrics across the board
+
+```{r}
+cbb_selected_columns %>%
+  group_by(POSTSEASON_FINISH) %>%
+  summarise(avg_ADJOE = mean(ADJOE), avg_ADJDE = mean(ADJDE), avg_Turnover_diff = mean(Turnover_diff), avg_WAB = mean(WAB))
+```
+
+The above analysis further strengthens our assumptions on the metrics picked to study which allows us to further believe that:
+
+1.  Offensive and Defensive Efficiencies (ADJOE and ADJDE)
+
+-   Top Teams (Champions and High Finishers): Teams with higher postseason finishes tend to have higher adjusted offensive efficiency (ADJOE) and lower adjusted defensive efficiency (ADJDE). For instance, the champion (1) has an ADJOE of 121.36 and an ADJDE of 90.98, indicating an effective offense and a strong defense. You can see similar results as you go down the table.
+-   Lower Ranked Teams: Conversly, teams with lower postseason finishes show a decrease in offensive efficiency and an increase in defensive inefficiency. For example, the team ranked 8, who made the tournament but did not progress far, has a lower ADJOE (105.93) and a higher ADJDE (102.06).
+
+2.  Turnover Differential (Turnover_Diff)
+
+-   High Finishers: Successful teams tend to have a positive turnover differential, meaning they cause more defensive turnovers than they commit offensively.
+-   Lower Finishers: Lower-ranked teams generally show a decrease in turnover differential, and for non-qualifiers i.e. 0, the value is negative i.e -0.45, indicating they committed more turnovers than they forced.
+
+3.  Wins over the Bubble (WAB)
+
+-   High Finishers: WAB values are significantly higher for teams with better finishes.
+-   Lower Finishers and Non-Qualifiers: WAB values decline with lower tournament success, and non-qualifiers (0) have a negative WAB (-9.73), underscoring their absence from the tournament.
+
+From the above we can conclude that:
+
+Teams that progress further in the NCAA tournament typically exhibit:
+
+-   High offensive efficiency (ADJOE) and strong defensive efficiency (ADJDE),
+-   A positive turnover differential, and
+-   High WAB scores, demonstrating their consistent performance above the tournament cutoff.
+
+Now many we want to focus on the teams that make it to the final four i.e. seed 1,2,3 so we can filter our our data for that information
+
+```{r}
+cbb_final_four <- cbb_selected_columns %>%
+  filter(POSTSEASON_FINISH %in% c(1,2,3))
+```
+
+Let us create some visualisations to understand this data
+
+1.  Let us look at the average seed that tends to reach the final four and also look at avg seed to win
+
+```{r}
+cbb_final_four %>%
+  group_by(POSTSEASON_FINISH) %>%
+  summarize(avg_seed = mean(SEED))
+```
+
+We are aware that each seed is given 4 teams i.e. Seed 1 has the best 4 teams in the country and Seed 2 has the enxt top 4 teams and so on. Based on the above it is evident that it doesn't need to be the top teams at the start of the tournament that always make the Final 4 but can be a mix of teams from different seeds.
+
+We can further look at graphs of each finish to see what seed tends to reach that level the most
+
+```{r}
+cbb_champions <- cbb_final_four %>% filter(POSTSEASON_FINISH == 1)
+cbb_runner_up <- cbb_final_four %>% filter(POSTSEASON_FINISH == 2)
+cbb_lost_final_four <- cbb_final_four %>% filter(POSTSEASON_FINISH == 3)
+
+ggplot(data = cbb_final_four, aes(x = SEED)) +
+  geom_histogram() +
+  labs(x = "Seed entering the tournament", 
+       y = "Number of times that seed has won") 
+
+ggplot(data = cbb_champions, aes(x = SEED)) +
+  geom_histogram() +
+  labs(x = "Seed entering the tournament", 
+       y = "Number of times that seed has won") 
+
+ggplot(data = cbb_runner_up, aes(x = SEED)) +
+  geom_histogram() +
+  labs(x = "Seed entering the tournament", 
+       y = "Number of times that seed has won") 
+
+ggplot(data = cbb_lost_final_four, aes(x = SEED)) +
+  geom_histogram() +
+  labs(x = "Seed entering the tournament", 
+       y = "Number of times that seed has won") 
+```
+
+Based on the above we can see that while the higher end seeds tend to win the tournament as a whole lower seed teams do put a tough fight in making it to the final four. From this we can gather that having a higher seed does not have to always indicate that a team is going to win the entire tournament and all high seed teams do not make the final 4.
+
+```{r}
+boxplot(cbb_champions$SEED)
+boxplot(cbb_runner_up$SEED)
+boxplot(cbb_lost_final_four$SEED)
+```
+Based on our boxplot analysis it is clear that we are looking at only 2 outliers which are in the case on champions. 
+
+```{r}
+cbb_champions %>%
+  filter(SEED %in% c(4,7))
+```
+We notice that these two indicators point towards the Connecticut team. We will take note of this and conitnue our analysis to later determine if we wish to remove this information or not
+
+Based on that analysis we can go ahead and not focus on the seed and continue working with the remaining columns to go ahead and create our regression models to analyse the data and create an optimal model.
+
+```{r}
+cbb_model_creation <- cbb %>%
+  select(c("TEAM", "CONF", "ADJOE", "ADJDE", "POSTSEASON_FINISH", "Turnover_diff", "WAB", "SEED")) %>%
+  filter(POSTSEASON_FINISH %in% c(1,2,3))
+```
+
+Lets create an inital model
+
+```{r}
+basic_model = lm (POSTSEASON_FINISH ~ ADJOE + ADJDE + Turnover_diff + WAB + SEED, data = cbb_model_creation)
+summary(basic_model)
+```
+
+From the above we can clearly see that both Turnover_diff, WAB and SEED have significantly high p values and are not significant indicators therefore we decide to focus only on ADJOE and ADJDE
+
+```{r}
+# we decide to do backward elimination to get the best model predictors for us
+basic_model_backward_elimination <- step(basic_model, direction = "backward")
+summary(basic_model_backward_elimination)
+```
+Based on backwar elimation we decide to focus on ADJOE and ADJDE
+
+```{r}
+updated_model = lm (POSTSEASON_FINISH ~ ADJOE + ADJDE, data = cbb_model_creation)
+summary(updated_model)
+```
+
+If we take our p value as 0.05 it is clear that they both are significant stats for our model. We can then plot the model to analyse the data further
+
+```{r}
+plot(updated_model, which = 1:2)
+```
+
+The data tends to not follow the line of refernce in the qq plot and at the same time it seems like while there is no fan like cloud being created in residual vs fitted line the red line doesnot follow the reference line either.
+
+We can now try to log our data to see if this helps change our results:
+
+```{r}
+logged_updated_model = lm (POSTSEASON_FINISH ~ log(ADJOE) + log(ADJDE), data = cbb_model_creation)
+plot(logged_updated_model, which = 1:2)
+
+```
+
+We donot see any significance difference however we notice that there are certain index that are standing out such as 13 and 22.
+
+We can dig in deeper to check why that is this case
+
+```{r}
+cbb_model_creation[c(13, 22), ]
+```
+
+Based on this data and the boxplots we saw about we can determine that Connecticut is an outlier that performed overly well compared to the seed they are and the the metrics they had for the year which tend to not match the metrics of the avg champion.
+
+For cleaner results we decide to remove Connecticut and create a model with the remaining data
+
+```{r}
+cbb_model_creation_without_uconn <- cbb_model_creation[-c(13), ]
+```
+
+```{r}
+reduced_model = lm (POSTSEASON_FINISH ~ ADJOE + ADJDE, data = cbb_model_creation_without_uconn)
+summary(reduced_model)
+```
+
+```{r}
+cbb24 <- read_csv("archive/cbb24.csv")
+```
+
+```{r}
+predicted_final_four <- predict(reduced_model, newdata = cbb24)
+```
+
+The lowest values in predicted final four should tell us what are model thinks are the beat team to make the final 4
+
+```{r}
+sorted_indices <- sort(predicted_final_four, decreasing = FALSE)
+top_4_indices <- sorted_indices[1:4]
+top_4_indices
+```
+
+
+```{r}
+cbb24[c(2,1,3,5),]
+```
+
+Based on our analysis the teams that should make it to the Final 4 are 
+- Connecticut : Champions 
+- Houston : Runners Up 
+- Purdue : Final 4
+- Auburn : Final 4
+
+Actual result:
+
+- Connecticut : Champions 
+- Purdue : Runners Up 
+- Alabama : Final 4
+- NC State : Final 4
+
+We notice that our prediction gave us 2/4 correct teams to make the final 4 with the championship team being correct. 
+
+Based on seeing this we can now predict what will happen in the upcoming season
+```{r}
+# read code from kempom rankings. I was able to only get the top 43 teams. We will need to update this as the weeks go by.
+basketball_team_ratings <- read_csv("basketball_team_ratings.csv")
+colnames(basketball_team_ratings)[6] <- "ADJOE"
+colnames(basketball_team_ratings)[7] <- "ADJDE"
+# run the predict code 
+predicted_final_four_2025 <- predict(reduced_model, newdata = basketball_team_ratings)
+# check the final output 
+sorted_indices_2025 <- sort(predicted_final_four_2025, decreasing = FALSE)
+top_4_indices_2025 <- sorted_indices_2025[1:4]
+top_4_indices_2025
+```
+```{r}
+basketball_team_ratings[c(1,2,3,4),]
+```
+
+```{r}
+library(car)
+```
+
+```{r}
+cbb_final_four
+```
+```{r}
+interactive_model <- lm(POSTSEASON_FINISH ~ ADJOE + ADJDE + ADJOE * ADJDE + ADJOE * Turnover_diff + ADJDE * Turnover_diff, data = cbb_final_four)
+summary(interactive_model)
+```
+```{r}
+vif(interactive_model)
+```
+```{r}
+vif(reduced_model)
+```
+
+We notice an extremely high multicollinarity and all the p values are greater than 0.05 for the model with interaction terms in comparison to the reduced model. The interactive model shows that all predictors are insignificant.
+
+We then see if we can somehow work on playing with our data to focus on exponentials or logs of our metrics to understand if we can see model improvements
+
+```{r}
+cbb_final_four_new_model <- cbb_final_four %>%
+  mutate(
+    Efficiency_ratio = ADJOE / ADJDE,
+    Log_SEED = log(SEED),                     
+    ADJOE_ADJDE_interaction = ADJOE * ADJDE,    
+    ADJOE_squared = ADJOE^2,                   
+    ADJDE_squared = ADJDE^2                     
+  )
+```
+
+```{r}
+cbb_final_four_new_model_data <- cbb_final_four_new_model %>%
+  select(POSTSEASON_FINISH, Efficiency_ratio, Turnover_diff, Log_SEED, ADJOE_ADJDE_interaction, ADJOE_squared, ADJDE_squared)
+```
+
+```{r}
+glm_model <- glm(POSTSEASON_FINISH ~ ., data = cbb_final_four_new_model_data)
+summary(glm_model)
+```
+
+Non of the predictors seem to be significant above so we performed a backward elimination to see what are the best predictors to keep 
+
+```{r}
+# we decide to do backward elimination to get the best model predictors for us
+cbb_final_four_new_model_data_reduced_model <- step(glm_model, direction = "backward")
+summary(cbb_final_four_new_model_data_reduced_model)
+```
+We decide to focus on the following predictors: ADJOE_ADJDE and ADJOE_squared and try to create our predictions
+
+```{r}
+cbb_final_four_new_model_data_reduced_model_picked <- glm(formula = POSTSEASON_FINISH ~ ADJOE_ADJDE_interaction + ADJOE_squared, data = cbb_final_four_new_model_data)
+summary(cbb_final_four_new_model_data_reduced_model_picked)
+```
+```{r}
+cbb24_updated <- cbb24 %>%
+  mutate(
+    ADJOE_ADJDE_interaction = ADJOE * ADJDE,
+    ADJOE_squared = ADJOE ** 2
+  )
+predicted_final_4_glm <- predict(cbb_final_four_new_model_data_reduced_model_picked, newdata = cbb24_updated)
+```
+
+```{r}
+sorted_indices <- sort(predicted_final_4_glm, decreasing = FALSE)
+top_4_indices <- sorted_indices[1:4]
+top_4_indices
+```
+
+```{r}
+cbb24_updated[c(1,2,3,5),] 
+```
+
+I think the simple linear model does better in accuracy compare to the glm model as we do output the correct Champion. Therefore I believe our end result is good above. 
