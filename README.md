@@ -74,6 +74,57 @@ Once we have obtain the postseason seeds for our teams we decide to work on pred
 
 Together, these interconnected projects offer a comprehensive tool for predicting both tournament seeding and outcomes, continuously refined with live data to provide real-time insights. This approach not only enhances the accuracy of predictions but also offers a dynamic system capable of adapting to new data and providing updated forecasts throughout the tournament season.
 
+---
+
+# March Madness Predictor Flask App
+
+## Features
+
+### **Homepage**
+- Upon visiting the homepage, you're greeted with:
+  - **Overall Top Seed:** The team projected to be the No. 1 overall seed for the tournament.
+  - **Teams on the Edge:** A list of teams currently just scrpaing through to make it to March Madness.
+
+( Nakiyah Please Add Photo )
+
+### **Seed Projections**
+- Scrolling down reveals the **projected seedings** for every team in the tournament:
+  - Seeds **1 through 10**: Each seed is assigned four teams.
+  - Seeds **11 and 16**: These have **six teams** each, accounting for play-in games.
+
+( Nakiyah Please Add Photo )
+
+### **League Representation**
+- Further down, you'll find a **league breakdown**, displaying how many teams are projected to make the tournament from each conference, including:
+  - Big Ten
+  - SEC
+  - ACC
+  - And more...
+
+( Nakiyah Please Add Photo )
+
+
+### **Prediction Page**
+- Clicking the **Predict Button** takes you to a dedicated prediction page:
+  - **Final Four Teams**: See which four teams are projected to reach the Final Four.
+  - **Runner-Up and Champion**: View predictions for the runner-up and the tournament champion.
+
+( Nakiyah Please Add Photo )
+
+### **Team Statistics**
+- Hover over any of the Final Four teams to reveal detailed statistics about their playstyle, including:
+  - **ADJOE (Adjusted Offensive Efficiency)**: Offensive effectiveness.
+  - **ADJDE (Adjusted Defensive Efficiency)**: Defensive performance.
+  - **TO (Turnover Rate)**: Team's tendency to commit turnovers.
+  - **DTO (Defensive Turnover Rate)**: Ability to force turnovers from opponents.
+  - **RB (Rebound Rate)**: Overall rebounding efficiency.
+  - **DRB (Defensive Rebound Rate)**: Success at securing defensive rebounds.
+  - And more...
+
+( Nakiyah Please Add Photo )
+
+---
+
 ## File Structure
 
 ```
@@ -96,12 +147,42 @@ FINAL_PROJECT_DE/
 
 -  Follow this for more clairty on the readme: https://github.com/nogibjj/Final_Project_Stock_Analysis
 
+- LoadTest: https://youtu.be/SOu6hgklQRA?si=c5ks_mM8yQdBN1G1
+
+```
+Set up procedure:
+
+1. pip install locust
+
+2. create .py file i.e ->
+
+from locust import HttpUser, task, between
+
+
+class WebsiteUser(HttpUser):
+    wait_time = between(a, b)  -> User wait time
+
+    @task
+    def load_test(self):
+        self.client.get(".....") -> whatever the endpoint is
+
+
+In the terminal, enter the following command to run the load test:
+locust -f Loadtest.py --csv=results/loadtest
+
+Go to http://localhost:8089/ to see the load test in action.
+```
+
 - Picture on the flow from Code -> DB -> AWS -> App running 
 
-- Photos of the application with instructions of what each page shows 
+- Add photos to the app structure mentioned
 
 - Update the file structure above 
 
-- Update some information about flast, rds, lightsail and more 
+- Update some information about flask, rds, lightsail and more 
+
+- Infrastructure as Code (IaC)
+
+- Microservice
 
 - talk about our requirements.txt file and what all is needed in specific 
