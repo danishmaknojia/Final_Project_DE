@@ -1,0 +1,37 @@
+2024-12-05 15:05:49,652 - INFO - Reading cbb22.csv.
+2024-12-05 15:05:49,656 - INFO - Renamed column 'EFGD_D' to 'EFG_D' in cbb22.csv.
+2024-12-05 15:05:49,656 - INFO - Saved updated cbb22.csv.
+2024-12-05 15:05:49,664 - INFO - Reading cbb16.csv and cbb.csv.
+2024-12-05 15:05:49,671 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-05 15:05:49,671 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
+2024-12-05 15:05:49,672 - INFO - Combined and cleaned 'POSTSEASON' and 'SEED' columns in cbb16.csv.
+2024-12-05 15:05:49,673 - INFO - Saved updated cbb16.csv.
+2024-12-05 15:05:49,696 - INFO - Reading ../Final_Project_DE/archive/cbb21.csv.
+2024-12-05 15:05:49,697 - INFO - Reading ../Final_Project_DE/archive/cbb23.csv.
+2024-12-05 15:05:49,698 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
+2024-12-05 15:05:49,699 - INFO - Reading ../Final_Project_DE/archive/cbb19.csv.
+2024-12-05 15:05:49,700 - INFO - Reading ../Final_Project_DE/archive/cbb18.csv.
+2024-12-05 15:05:49,701 - INFO - Reading ../Final_Project_DE/archive/cbb15.csv.
+2024-12-05 15:05:49,702 - INFO - Reading ../Final_Project_DE/archive/cbb14.csv.
+2024-12-05 15:05:49,703 - INFO - Reading ../Final_Project_DE/archive/cbb16.csv.
+2024-12-05 15:05:49,704 - INFO - Reading ../Final_Project_DE/archive/cbb17.csv.
+2024-12-05 15:05:49,705 - INFO - Reading ../Final_Project_DE/archive/cbb13.csv.
+2024-12-05 15:05:49,771 - INFO - Processing cbb24 dataframe.
+2024-12-05 15:05:49,774 - INFO - Saved train_data.csv and test_data.csv successfully.
+2024-12-05 15:05:54,792 - INFO - Loading training and testing datasets.
+2024-12-05 15:05:54,807 - INFO - Filtering rows with non-null SEED values.
+2024-12-05 15:05:54,808 - INFO - Selected features: ['ADJOE', 'ADJDE', 'BARTHAG', 'EFG_O', 'EFG_D', 'TOR', 'TORD', 'ORB', 'DRB', 'FTR', 'FTRD', 'ADJ_T', 'WAB'].
+2024-12-05 15:05:54,809 - INFO - Splitting data into training and testing sets.
+2024-12-05 15:05:54,811 - INFO - Scaling features using StandardScaler.
+2024-12-05 15:05:54,812 - INFO - Fitting the GAM model.
+2024-12-05 15:05:55,178 - INFO - Predicting on test data.
+2024-12-05 15:06:00,918 - INFO - Predicting seeds for cbb24.
+2024-12-05 15:06:00,930 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-05 15:06:00,953 - INFO - Extract Data from Bart Torvik
+2024-12-05 15:06:02,478 - INFO - Execute model on our current dataset i.e. current_cbb_live_data to get the seeds for 2024-2025 season
+2024-12-05 15:06:09,307 - INFO - Run model to obtain predictions on who will be winning march madness for the 2024-25 season
+2024-12-05 15:06:09,308 - INFO - Training Random Forest Classifier.
+2024-12-05 15:06:09,441 - INFO - Evaluating model performance on the test set.
+2024-12-05 15:06:09,454 - INFO - Applying the model to current data.
+2024-12-05 15:06:09,464 - INFO - Assigning labels systematically.
+2024-12-05 15:06:09,484 - INFO - Mapping assigned labels back to POSTSEASON names.
