@@ -1,5 +1,7 @@
+export PORT = 8080
+
 # Define the image name and Docker Hub username
-IMAGE_NAME = nd191_assignment12
+IMAGE_NAME = de_project
 DOCKER_ID_USER = nakiyah24
 
 # Default port if not set
@@ -13,7 +15,7 @@ build:
 # Run the Docker container
 # Forward $(PORT) on the host to port 5000 in the container
 run:
-	docker run -p $(PORT):5000 $(IMAGE_NAME)
+	docker run -p $(PORT):8080 -e PORT=$(PORT) $(IMAGE_NAME)
 
 # Stop and remove all containers associated with the image, then delete the image
 clean:
