@@ -5,3 +5,4 @@ python-dotenv==1.0.1
 Flask-Mail==0.10.0
 pandas
 boto3==1.35.76
+awscliv2==2.3.1
