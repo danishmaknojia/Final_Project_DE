@@ -5,7 +5,7 @@ IMAGE_NAME = de_project
 DOCKER_ID_USER = nakiyah24
 
 # Default port if not set
-PORT ?= 5005
+PORT ?= 8080
 
 # Build the Docker image
 build:
@@ -31,13 +31,21 @@ image_show:
 container_show:
 	docker ps
 
-# Push the image to Docker Hub
+# Push the image to Docker Hub or Amazon ECR
 push:
-	docker login	
-	docker tag $(IMAGE_NAME):latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/project:latest
-	aws ecr describe-repositories --repository-names project --region us-east-1
-#docker tag $(IMAGE_NAME) $(DOCKER_ID_USER)/$(IMAGE_NAME)
-#docker push $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
+	docker login
+	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 381492212823.dkr.ecr.us-east-1.amazonaws.com
+	docker tag $(IMAGE_NAME):latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/de_project:latest
+	docker push 381492212823.dkr.ecr.us-east-1.amazonaws.com/de_project:latest
+
+# Describe repos
+# aws ecr describe-repositories --repository-names project --region us-east-1
+
+# Push to Docker Hub (Optional)
+push_docker_hub:
+	docker login
+	docker tag $(IMAGE_NAME) $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
+	docker push $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
 
 # Login to Docker Hub
 login:
