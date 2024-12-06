@@ -33,9 +33,11 @@ container_show:
 
 # Push the image to Docker Hub
 push:
-	docker login
-	docker tag $(IMAGE_NAME) $(DOCKER_ID_USER)/$(IMAGE_NAME)
-	docker push $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
+	docker login	
+	docker tag $(IMAGE_NAME):latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/project:latest
+	aws ecr describe-repositories --repository-names project --region us-east-1
+#docker tag $(IMAGE_NAME) $(DOCKER_ID_USER)/$(IMAGE_NAME)
+#docker push $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
 
 # Login to Docker Hub
 login:
