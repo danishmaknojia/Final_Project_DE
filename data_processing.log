@@ -221,3 +221,45 @@
 2024-12-06 16:58:40,971 - INFO - Applying the model to current data.
 2024-12-06 16:58:40,977 - INFO - Assigning labels systematically.
 2024-12-06 16:58:40,992 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-06 17:07:29,054 - INFO - Loading training and testing datasets.
+2024-12-06 17:07:29,060 - INFO - Filtering rows with non-null SEED values.
+2024-12-06 17:07:29,061 - INFO - Selected features: ['ADJOE', 'ADJDE', 'BARTHAG', 'EFG_O', 'EFG_D', 'TOR', 'TORD', 'ORB', 'DRB', 'FTR', 'FTRD', 'ADJ_T', 'WAB'].
+2024-12-06 17:07:29,061 - INFO - Splitting data into training and testing sets.
+2024-12-06 17:07:29,062 - INFO - Scaling features using StandardScaler.
+2024-12-06 17:07:29,063 - INFO - Fitting the GAM model.
+2024-12-06 17:07:29,397 - INFO - Predicting on test data.
+2024-12-06 17:07:34,934 - INFO - Predicting seeds for cbb24.
+2024-12-06 17:07:34,945 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-06 17:07:34,953 - INFO - Execute model on our current dataset i.e. current_cbb_live_data to get the seeds for 2024-2025 season
+2024-12-06 17:07:34,954 - INFO - Splitting data into training and testing sets.
+2024-12-06 17:07:34,954 - INFO - Scaling features using StandardScaler.
+2024-12-06 17:07:34,956 - INFO - Fitting the GAM model.
+2024-12-06 17:07:35,523 - INFO - Predicting on test data.
+2024-12-06 17:07:40,999 - INFO - Predicting seeds for cbb24.
+2024-12-06 17:07:41,010 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-06 17:07:41,017 - INFO - Run model to obtain predictions on who will be winning march madness for the 2024-25 season
+2024-12-06 17:07:41,018 - INFO - Training Random Forest Classifier.
+2024-12-06 17:07:41,129 - INFO - Evaluating model performance on the test set.
+2024-12-06 17:07:41,138 - INFO - Applying the model to current data.
+2024-12-06 17:07:41,144 - INFO - Assigning labels systematically.
+2024-12-06 17:07:41,145 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-06 17:14:23,296 - INFO - Filtering rows with non-null SEED values.
+2024-12-06 17:14:23,302 - INFO - Selected features: ['feature1', 'feature2', 'feature3'].
+2024-12-06 17:14:23,312 - INFO - Filtering rows with non-null SEED values.
+2024-12-06 17:14:23,313 - INFO - Selected features: ['feature1', 'feature2', 'feature3'].
+2024-12-06 17:14:23,313 - INFO - Splitting data into training and testing sets.
+2024-12-06 17:14:23,315 - INFO - Scaling features using StandardScaler.
+2024-12-06 17:14:23,473 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-06 17:14:23,479 - INFO - Filtering rows with non-null SEED values.
+2024-12-06 17:14:23,479 - INFO - Selected features: ['feature1', 'feature2', 'feature3'].
+2024-12-06 17:14:23,480 - INFO - Training Random Forest Classifier.
+2024-12-06 17:14:23,556 - INFO - Evaluating model performance on the test set.
+2024-12-06 17:14:23,590 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-06 17:15:30,467 - INFO - Filtering rows with non-null SEED values.
+2024-12-06 17:15:30,468 - INFO - Selected features: ['feature1', 'feature2', 'feature3'].
+2024-12-06 17:15:30,469 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-06 17:15:30,471 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-06 17:15:52,542 - INFO - Filtering rows with non-null SEED values.
+2024-12-06 17:15:52,543 - INFO - Selected features: ['feature1', 'feature2', 'feature3'].
+2024-12-06 17:15:52,546 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-06 17:15:52,548 - INFO - Mapping assigned labels back to POSTSEASON names.
