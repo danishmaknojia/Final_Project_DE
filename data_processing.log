@@ -35,3 +35,81 @@
 2024-12-05 15:06:09,454 - INFO - Applying the model to current data.
 2024-12-05 15:06:09,464 - INFO - Assigning labels systematically.
 2024-12-05 15:06:09,484 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-05 18:13:05,309 - ERROR - Error uploading ../Final_Project_DE/archive/cbb22.csv to S3: Unable to locate credentials
+2024-12-05 18:16:42,929 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-05 18:16:46,761 - ERROR - Error uploading ../Final_Project_DE/archive/cbb22.csv to S3: Could not connect to the endpoint URL: "https://your-s3-bucket-name.s3.None.amazonaws.com/Final_Project_DE/archive/cbb22.csv"
+2024-12-05 18:17:14,879 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-05 18:17:18,383 - ERROR - Error uploading ../Final_Project_DE/archive/cbb22.csv to S3: Could not connect to the endpoint URL: "https://cbb-data-engg.s3.None.amazonaws.com/Final_Project_DE/archive/cbb22.csv"
+2024-12-05 18:20:34,152 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-05 18:20:35,003 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-05 18:20:35,316 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-05 18:20:36,481 - INFO - Uploaded ../Final_Project_DE/archive/cbb.csv to S3 as Final_Project_DE/archive/cbb.csv.
+2024-12-05 18:20:36,714 - INFO - Uploaded ../Final_Project_DE/archive/cbb24.csv to S3 as Final_Project_DE/archive/cbb24.csv.
+2024-12-05 18:20:36,714 - INFO - Processing cbb22.csv.
+2024-12-05 18:20:37,072 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-05 18:20:37,432 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-05 18:20:37,435 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
+2024-12-05 18:20:37,440 - INFO - Combining and cleaning 'POSTSEASON' and 'SEED' columns in cbb16.csv.
+2024-12-05 18:20:37,638 - INFO - Combining multiple CSV files.
+2024-12-05 18:20:37,729 - INFO - Reading Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-05 18:20:37,816 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
+2024-12-05 18:20:38,139 - INFO - Processing cbb24.csv.
+2024-12-05 18:20:38,709 - INFO - Processing completed successfully.
+2024-12-05 18:26:59,082 - INFO - Reading cbb22.csv.
+2024-12-05 18:26:59,086 - INFO - Renamed column 'EFGD_D' to 'EFG_D' in cbb22.csv.
+2024-12-05 18:26:59,087 - INFO - Saved updated cbb22.csv.
+2024-12-05 18:26:59,095 - INFO - Reading cbb16.csv and cbb.csv.
+2024-12-05 18:26:59,112 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-05 18:26:59,114 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
+2024-12-05 18:26:59,118 - INFO - Combined and cleaned 'POSTSEASON' and 'SEED' columns in cbb16.csv.
+2024-12-05 18:26:59,119 - INFO - Saved updated cbb16.csv.
+2024-12-05 18:26:59,142 - INFO - Reading ../Final_Project_DE/archive/cbb21.csv.
+2024-12-05 18:26:59,143 - INFO - Reading ../Final_Project_DE/archive/cbb23.csv.
+2024-12-05 18:26:59,145 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
+2024-12-05 18:26:59,146 - INFO - Reading ../Final_Project_DE/archive/cbb19.csv.
+2024-12-05 18:26:59,147 - INFO - Reading ../Final_Project_DE/archive/cbb18.csv.
+2024-12-05 18:26:59,148 - INFO - Reading ../Final_Project_DE/archive/cbb15.csv.
+2024-12-05 18:26:59,149 - INFO - Reading ../Final_Project_DE/archive/cbb14.csv.
+2024-12-05 18:26:59,151 - INFO - Reading ../Final_Project_DE/archive/cbb16.csv.
+2024-12-05 18:26:59,152 - INFO - Reading ../Final_Project_DE/archive/cbb17.csv.
+2024-12-05 18:26:59,153 - INFO - Reading ../Final_Project_DE/archive/cbb13.csv.
+2024-12-05 18:26:59,210 - INFO - Processing cbb24 dataframe.
+2024-12-05 18:26:59,231 - INFO - Saved train_data.csv and test_data.csv successfully.
+2024-12-05 18:27:29,656 - INFO - Reading cbb22.csv.
+2024-12-05 18:27:29,659 - INFO - Renamed column 'EFGD_D' to 'EFG_D' in cbb22.csv.
+2024-12-05 18:27:29,659 - INFO - Saved updated cbb22.csv.
+2024-12-05 18:27:29,667 - INFO - Reading cbb16.csv and cbb.csv.
+2024-12-05 18:27:29,675 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-05 18:27:29,676 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
+2024-12-05 18:27:29,677 - INFO - Combined and cleaned 'POSTSEASON' and 'SEED' columns in cbb16.csv.
+2024-12-05 18:27:29,678 - INFO - Saved updated cbb16.csv.
+2024-12-05 18:27:29,702 - INFO - Reading ../Final_Project_DE/archive/cbb21.csv.
+2024-12-05 18:27:29,707 - INFO - Reading ../Final_Project_DE/archive/cbb23.csv.
+2024-12-05 18:27:29,711 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
+2024-12-05 18:27:29,713 - INFO - Reading ../Final_Project_DE/archive/cbb19.csv.
+2024-12-05 18:27:29,716 - INFO - Reading ../Final_Project_DE/archive/cbb18.csv.
+2024-12-05 18:27:29,720 - INFO - Reading ../Final_Project_DE/archive/cbb15.csv.
+2024-12-05 18:27:29,723 - INFO - Reading ../Final_Project_DE/archive/cbb14.csv.
+2024-12-05 18:27:29,725 - INFO - Reading ../Final_Project_DE/archive/cbb16.csv.
+2024-12-05 18:27:29,725 - INFO - Reading ../Final_Project_DE/archive/cbb17.csv.
+2024-12-05 18:27:29,728 - INFO - Reading ../Final_Project_DE/archive/cbb13.csv.
+2024-12-05 18:27:29,768 - INFO - Processing cbb24 dataframe.
+2024-12-05 18:27:29,772 - INFO - Saved train_data.csv and test_data.csv successfully.
+2024-12-05 18:28:09,031 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-05 18:28:09,831 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-05 18:28:10,191 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-05 18:28:10,545 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-05 18:28:10,807 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-05 18:28:11,056 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-05 18:28:12,164 - INFO - Uploaded ../Final_Project_DE/archive/cbb.csv to S3 as Final_Project_DE/archive/cbb.csv.
+2024-12-05 18:28:12,346 - INFO - Uploaded ../Final_Project_DE/archive/cbb24.csv to S3 as Final_Project_DE/archive/cbb24.csv.
+2024-12-05 18:28:12,346 - INFO - Processing cbb22.csv.
+2024-12-05 18:28:12,719 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-05 18:28:13,139 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-05 18:28:13,140 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
+2024-12-05 18:28:13,142 - INFO - Combining and cleaning 'POSTSEASON' and 'SEED' columns in cbb16.csv.
+2024-12-05 18:28:13,318 - INFO - Combining multiple CSV files.
+2024-12-05 18:28:13,407 - INFO - Reading Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-05 18:28:13,494 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
+2024-12-05 18:28:14,033 - INFO - Processing cbb24.csv.
+2024-12-05 18:28:14,602 - INFO - Processing completed successfully.
