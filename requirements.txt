@@ -4,3 +4,4 @@ Flask==3.0.3
 python-dotenv==1.0.1
 Flask-Mail==0.10.0
 pandas
+boto3==1.35.76
