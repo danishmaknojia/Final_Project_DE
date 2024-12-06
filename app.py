@@ -88,7 +88,7 @@ def final_four():
 @app.route('/health')
 def health_check():
     logging.info("Health check endpoint accessed.")
-    return "OK", 200
+    return "This web app is healthy!", 200
 
 if __name__ == "__main__":
     logging.info("Starting Flask application.")
