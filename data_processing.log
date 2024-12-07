@@ -380,3 +380,60 @@
 2024-12-07 11:03:22,428 - INFO - Applying the model to current data.
 2024-12-07 11:03:22,433 - INFO - Assigning labels systematically.
 2024-12-07 11:03:22,434 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-07 11:23:32,282 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 11:23:41,255 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 11:23:42,989 - INFO - Uploaded ../Final_Project_DE/archive/cbb13.csv to S3 as Final_Project_DE/archive/cbb13.csv.
+2024-12-07 11:23:43,520 - INFO - Uploaded ../Final_Project_DE/archive/cbb14.csv to S3 as Final_Project_DE/archive/cbb14.csv.
+2024-12-07 11:23:44,034 - INFO - Uploaded ../Final_Project_DE/archive/cbb15.csv to S3 as Final_Project_DE/archive/cbb15.csv.
+2024-12-07 11:23:44,458 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-07 11:23:44,847 - INFO - Uploaded ../Final_Project_DE/archive/cbb17.csv to S3 as Final_Project_DE/archive/cbb17.csv.
+2024-12-07 11:23:45,221 - INFO - Uploaded ../Final_Project_DE/archive/cbb19.csv to S3 as Final_Project_DE/archive/cbb19.csv.
+2024-12-07 11:23:45,625 - INFO - Uploaded ../Final_Project_DE/archive/cbb18.csv to S3 as Final_Project_DE/archive/cbb18.csv.
+2024-12-07 11:23:46,045 - INFO - Uploaded ../Final_Project_DE/archive/cbb21.csv to S3 as Final_Project_DE/archive/cbb21.csv.
+2024-12-07 11:23:46,447 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-07 11:23:46,826 - INFO - Uploaded ../Final_Project_DE/archive/cbb23.csv to S3 as Final_Project_DE/archive/cbb23.csv.
+2024-12-07 11:23:47,207 - INFO - Uploaded ../Final_Project_DE/archive/cbb24.csv to S3 as Final_Project_DE/archive/cbb24.csv.
+2024-12-07 11:23:48,674 - INFO - Uploaded ../Final_Project_DE/archive/cbb.csv to S3 as Final_Project_DE/archive/cbb.csv.
+2024-12-07 11:23:48,674 - INFO - Processing cbb22.csv.
+2024-12-07 11:23:49,226 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-07 11:23:49,798 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-07 11:23:49,800 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
+2024-12-07 11:23:49,805 - INFO - Combining and cleaning 'POSTSEASON' and 'SEED' columns in cbb16.csv.
+2024-12-07 11:23:50,464 - INFO - Combining multiple CSV files.
+2024-12-07 11:23:51,289 - INFO - Reading Final_Project_DE/archive/cbb13.csv from S3.
+2024-12-07 11:23:51,419 - INFO - Reading Final_Project_DE/archive/cbb14.csv from S3.
+2024-12-07 11:23:51,553 - INFO - Reading Final_Project_DE/archive/cbb15.csv from S3.
+2024-12-07 11:23:51,684 - INFO - Reading Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-07 11:23:51,811 - INFO - Reading Final_Project_DE/archive/cbb17.csv from S3.
+2024-12-07 11:23:51,940 - INFO - Reading Final_Project_DE/archive/cbb18.csv from S3.
+2024-12-07 11:23:52,063 - INFO - Reading Final_Project_DE/archive/cbb19.csv from S3.
+2024-12-07 11:23:52,194 - INFO - Reading Final_Project_DE/archive/cbb21.csv from S3.
+2024-12-07 11:23:52,323 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
+2024-12-07 11:23:52,448 - INFO - Reading Final_Project_DE/archive/cbb23.csv from S3.
+2024-12-07 11:23:53,754 - INFO - Processing cbb24.csv.
+2024-12-07 11:23:55,112 - INFO - Processing completed successfully.
+2024-12-07 11:23:55,112 - INFO - Extracting data from Bart Torvik.
+2024-12-07 11:23:56,904 - INFO - Bart Torvik data extraction and upload completed.
+2024-12-07 11:29:43,455 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 11:29:43,503 - INFO - Loading training and testing datasets.
+2024-12-07 11:29:45,035 - INFO - Filtering rows with non-null SEED values.
+2024-12-07 11:29:45,042 - INFO - Selected features: ['ADJOE', 'ADJDE', 'BARTHAG', 'EFG_O', 'EFG_D', 'TOR', 'TORD', 'ORB', 'DRB', 'FTR', 'FTRD', 'ADJ_T', 'WAB'].
+2024-12-07 11:29:45,044 - INFO - Splitting data into training and testing sets.
+2024-12-07 11:29:45,047 - INFO - Scaling features using StandardScaler.
+2024-12-07 11:29:45,050 - INFO - Fitting the GAM model.
+2024-12-07 11:29:45,475 - INFO - Predicting on test data.
+2024-12-07 11:29:51,988 - INFO - Predicting seeds for cbb24.
+2024-12-07 11:29:51,997 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-07 11:29:52,634 - INFO - Execute model on our current dataset i.e. current_cbb_live_data to get the seeds for 2024-2025 season
+2024-12-07 11:29:52,635 - INFO - Splitting data into training and testing sets.
+2024-12-07 11:29:52,636 - INFO - Scaling features using StandardScaler.
+2024-12-07 11:29:52,640 - INFO - Fitting the GAM model.
+2024-12-07 11:29:52,995 - INFO - Predicting on test data.
+2024-12-07 11:29:58,245 - INFO - Predicting seeds for cbb24.
+2024-12-07 11:29:58,252 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-07 11:29:58,512 - INFO - Run model to obtain predictions on who will be winning march madness for the 2024-25 season
+2024-12-07 11:29:58,513 - INFO - Training Random Forest Classifier.
+2024-12-07 11:29:58,598 - INFO - Evaluating model performance on the test set.
+2024-12-07 11:29:58,603 - INFO - Applying the model to current data.
+2024-12-07 11:29:58,606 - INFO - Assigning labels systematically.
+2024-12-07 11:29:58,606 - INFO - Mapping assigned labels back to POSTSEASON names.
