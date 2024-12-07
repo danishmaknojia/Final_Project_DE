@@ -3596,3 +3596,14 @@
 2024-12-07 17:18:47,686 - INFO - 127.0.0.1 - - [07/Dec/2024 17:18:47] "[36mGET /static/conferenceLogos/SB.png HTTP/1.1[0m" 304 -
 2024-12-07 17:18:47,686 - INFO - 127.0.0.1 - - [07/Dec/2024 17:18:47] "[36mGET /static/conferenceLogos/SC.png HTTP/1.1[0m" 304 -
 2024-12-07 17:18:47,687 - INFO - 127.0.0.1 - - [07/Dec/2024 17:18:47] "[36mGET /static/conferenceLogos/Sum.png HTTP/1.1[0m" 304 -
+2024-12-07 17:33:52,103 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-07 17:33:52,103 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-07 17:33:52,113 - INFO - Data loaded and processed successfully.
+2024-12-07 17:33:52,113 - INFO - Predicting Final Four results.
+2024-12-07 17:33:52,114 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-07 17:33:52,114 - INFO - Starting Flask application.
+2024-12-07 17:33:52,124 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.202:8080
+2024-12-07 17:33:52,125 - INFO - [33mPress CTRL+C to quit[0m
