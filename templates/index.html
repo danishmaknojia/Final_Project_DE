@@ -60,14 +60,14 @@
 
         /* Unified Content Box */
         .content-box {
-            background-color: #d0d9e2; /* Light grey-blue */
+            background-color: white; /* Light grey-blue */
             color: #2a3a4a; /* Darker grey-blue for text */
             padding: 20px 25px; /* Balanced padding */
-            border-radius: 8px; /* Rounded corners for a modern look */
+            border-radius: 1px; /* Rounded corners for a modern look */
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
             margin: 30px auto; /* Space between elements and center alignment */
-            max-width: 1000px; /* Ensure readability on large screens */
-            width: 90%; /* Responsive design */
+            max-width: 2000px; /* Ensure readability on large screens */
+            width: 99%; /* Responsive design */
             text-align: center; /* Center text content */
             position: relative; /* For potential layering enhancements */
         }
@@ -165,6 +165,8 @@
             display: flex;
             flex-direction: column; /* Ensures content stacks vertically */
             justify-content: space-between; /* Ensures balanced spacing */
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .card-body {
@@ -191,6 +193,29 @@
             align-items: center;
             gap: 20px; /* Adds space between the logo and text */
             padding: 10px 0; /* Adds padding between team items */
+        }
+
+        /* Title Banner */
+        .title-banner {
+            background-color: #013369; /* Slightly lighter blue shade */
+            color: white;
+            font-weight: bold; /* Ensures title stands out */
+            margin: 0; /* Removes default margin for clean styling */
+            padding: 10px 15px; /* Adjusted padding for even top and bottom spacing */
+            border-radius: 8px; /* Rounded corners for a sleek look */
+            margin-bottom: 25px; /* Adds space below the banner */
+            text-align: center;
+            width: 100%; /* Ensures the width matches the container behind */
+            box-sizing: border-box; /* Ensures padding doesn't affect the width */
+            display: flex; /* Enables flexbox for centering */
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+        }
+        
+        .title-banner h3 {
+            margin: 0; /* Removes default margin for clean styling */
+            font-size: 1.75rem; /* Larger font size for prominence */
+            
         }
 
         /* Conference Groups */
@@ -227,23 +252,26 @@
 
     <!-- Description and Date Conatiner -->
     <div class="content-box">
-        <h3>Description</h3>
+        <h3>About Us</h3>
+        <p><strong>Group:</strong> Arko Bhattacharya, Danish Maknojia, Vishesh Gupta, Nakiyah Dhariwala</p>
         <p>Welcome to the March Madness Predictor! 
             
-            As part of our IDS 706 - Data Engineering final project, this Flask-powered web app predicts the 2025 tournament seedings, identifies the Final Four contenders, and forecasts the champion. Our data is stored in a SQL database, and both the database and the web app are hosted on AWS for reliability and performance.
+            As part of our IDS 706 - Data Engineering final project, this Flask-powered web app predicts the 2025 tournament seedings, identifies the Final Four contenders, and forecasts the champion.
             
             Explore team rankings, seed groups, and conferences with ease. Stay ahead of the game with the latest statistics and predictions for the tournament—let the madness begin!</p>
-            <p><strong>Group:</strong> {{ group_name }}</p>
+
             <p><strong>Last updated on:</strong> {{ last_updated }} (Eastern Time)</p>
     </div>
 
 
     <!-- Main Content -->
     <div class="container content-container mt-4">
-        <!-- Rank Section -->
         <div class="row text-center mb-4 subsection">
+        <!-- Rank Section -->
+        <div class="title-banner">
             <h3>Top and Bottom Ranked Teams</h3>
-            
+        </div>
+
             <div class="col">
                 <h4>{{ first_team.TEAM1 }}</h4>
                 <img src="{{ first_team.logo }}" class="logoTeamRanked" alt="{{ first_team.TEAM1 }}">
@@ -263,7 +291,10 @@
 
         <!-- Seed Groups -->
         <div class="row mb-4 subsection">
+        <div class="title-banner">    
             <h3>Seed Groups</h3>
+        </div>
+
             <div class="row">
                 {% for seed, teams in grouped_seeds.items() %}
                     <div class="col-md-3 mb-4">
@@ -287,8 +318,10 @@
 
         <!-- Conference List -->
         <div class="conference-overview subsection">
-            <div class="conference-list">
-                <h3>Conference Overview</h3>
+                <div class="title-banner">
+                    <h3>Conference Overview</h3>
+                </div>
+                <div class="conference-list">
                 <ul class="list-group">
                     {% for conf, data in grouped_conferences.items() %}
                         <li class="list-group-item d-flex align-items-center conference-item">
