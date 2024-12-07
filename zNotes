@@ -2,3 +2,6 @@
 deactivate
 
 pip3 install -r requirements.txt
+
+locust -f /Users/nakiyahdhariwala/Final_Project_DE/load_test.py
+locust -f load_test.py --users 100 --spawn-rate 10
