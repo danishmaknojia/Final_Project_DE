@@ -27,8 +27,8 @@ jobs:
 
     # Step 4: Tag the Docker image for ECR
     - name: Tag Docker image for ECR
-      run: docker tag de_project:latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/de_project:latest
+      run: docker tag ids706_cbb:latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/ids706_cbb:latest
 
     # Step 5: Push the Docker image to ECR
     - name: Push Docker image to Amazon ECR
-      run: docker push 381492212823.dkr.ecr.us-east-1.amazonaws.com/de_project:latest
+      run: docker push 381492212823.dkr.ecr.us-east-1.amazonaws.com/ids706_cbb:latest
