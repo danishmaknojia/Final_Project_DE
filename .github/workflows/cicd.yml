@@ -1,4 +1,4 @@
-name: Build and Push Docker Image to ECR
+name: Build, Test, and Push Docker Image to ECR
 
 on:
   push:
@@ -14,21 +14,40 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    # Step 2: Log in to Amazon ECR
+    # Step 2: Set up Python and install dependencies (if using Python for tests)
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'  # or your desired Python version
+
+    - name: Install dependencies
+      run: |
+        python3 -m pip3 install --upgrade pip3
+        pip3 install -r requirements.txt
+        
+    # Step 3: Run lint
+    - name: lint
+      run: make lint
+
+    # Step 4: Run tests
+    - name: Run tests
+      run: make tests  # Assuming `make tests` runs your test suite
+
+    # Step 5: Log in to Amazon ECR
     - name: Log in to Amazon ECR
       run: |
         aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 381492212823.dkr.ecr.us-east-1.amazonaws.com
 
-    # Step 3: Build the Docker image
+    # Step 6: Build the Docker image
     - name: Build Docker image
       run: make build
 
-    # Step 4: Tag the Docker image for ECR
+    # Step 7: Tag the Docker image for ECR
     - name: Tag Docker image for ECR
       run: docker tag ids706_cbb:latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/ids706_cbb:latest
 
-    # Step 5: Push the Docker image to ECR
+    # Step 8: Push the Docker image to ECR
     - name: Push Docker image to Amazon ECR
       run: docker push 381492212823.dkr.ecr.us-east-1.amazonaws.com/ids706_cbb:latest

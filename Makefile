@@ -8,6 +8,15 @@ DOCKER_ID_USER = nakiyah24
 # Default port if not set
 PORT ?= 8080
 
+# Target to run tests before proceeding with other tasks
+test:
+	@echo "Running tests..."
+	python3 -m pytest -vv --nbval --cov=. tests/test_*.py
+	@echo "Tests completed successfully!"
+
+lint:
+	pylint --disable=R,C --ignore-patterns=tests/test_.*?py *.py
+
 # Build the Docker image
 build:
 	docker build -t $(IMAGE_NAME_LOCAL):latest .
@@ -34,10 +43,13 @@ container_show:
 
 # Push the image to Docker Hub or Amazon ECR
 push:
-	docker login
+	@echo "Logging in to AWS ECR..."
 	aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 381492212823.dkr.ecr.us-east-1.amazonaws.com
+	@echo "Tagging image..."
 	docker tag $(IMAGE_NAME_LOCAL):latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/$(IMAGE_NAME_ECR):latest
+	@echo "Pushing image to ECR..."
 	docker push 381492212823.dkr.ecr.us-east-1.amazonaws.com/$(IMAGE_NAME_ECR):latest
+
 
 # Describe repos
 # aws ecr describe-repositories --repository-names project --region us-east-1

@@ -92,3 +92,23 @@
 2024-12-06 10:23:34,112 - INFO - 127.0.0.1 - - [06/Dec/2024 10:23:34] "[36mGET /static/conferenceLogos/SB.png HTTP/1.1[0m" 304 -
 2024-12-06 10:23:34,124 - INFO - 127.0.0.1 - - [06/Dec/2024 10:23:34] "[36mGET /static/conferenceLogos/SC.png HTTP/1.1[0m" 304 -
 2024-12-06 10:23:34,125 - INFO - 127.0.0.1 - - [06/Dec/2024 10:23:34] "[36mGET /static/conferenceLogos/Sum.png HTTP/1.1[0m" 304 -
+2024-12-07 15:45:19,581 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-07 15:45:19,581 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-07 15:45:19,595 - INFO - Data loaded and processed successfully.
+2024-12-07 15:45:19,595 - INFO - Predicting Final Four results.
+2024-12-07 15:45:19,595 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-07 15:48:18,589 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-07 15:48:18,589 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-07 15:48:18,602 - INFO - Data loaded and processed successfully.
+2024-12-07 15:48:18,602 - INFO - Predicting Final Four results.
+2024-12-07 15:48:18,602 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-07 15:57:42,754 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-07 15:57:42,754 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-07 15:57:42,768 - INFO - Data loaded and processed successfully.
+2024-12-07 15:57:42,768 - INFO - Predicting Final Four results.
+2024-12-07 15:57:42,768 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-07 15:58:08,787 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-07 15:58:08,787 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-07 15:58:08,800 - INFO - Data loaded and processed successfully.
+2024-12-07 15:58:08,800 - INFO - Predicting Final Four results.
+2024-12-07 15:58:08,800 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
