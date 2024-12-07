@@ -1,9 +1,8 @@
 import pandas as pd
 import logging
 import boto3
-from io import StringIO
+from mylib.lib import upload_to_s3, read_s3_csv, write_s3_csv
 
-# Set up logging
 logging.basicConfig(
     filename="data_processing.log",
     level=logging.INFO,
@@ -16,48 +15,21 @@ bucket_name = "cbb-data-engg"
 input_prefix = "Final_Project_DE/archive/"
 output_prefix = "Final_Project_DE/"
 
-
-def upload_to_s3(local_path, bucket, s3_key):
-    """Upload a local file to S3."""
-    try:
-        s3.upload_file(local_path, bucket, s3_key)
-        logging.info(f"Uploaded {local_path} to S3 as {s3_key}.")
-    except Exception as e:
-        logging.error(f"Error uploading {local_path} to S3: {e}")
-        raise
-
-
-def read_s3_csv(bucket, key):
-    """Read a CSV file from S3 into a Pandas DataFrame."""
-    try:
-        obj = s3.get_object(Bucket=bucket, Key=key)
-        return pd.read_csv(StringIO(obj["Body"].read().decode("utf-8")))
-    except Exception as e:
-        logging.error(f"Error reading {key} from S3: {e}")
-        raise
-
-
-def write_s3_csv(df, bucket, key):
-    """Write a Pandas DataFrame to S3 as a CSV file."""
-    try:
-        csv_buffer = StringIO()
-        df.to_csv(csv_buffer, index=False)
-        s3.put_object(Bucket=bucket, Key=key, Body=csv_buffer.getvalue())
-    except Exception as e:
-        logging.error(f"Error writing {key} to S3: {e}")
-        raise
-
-
 # Step 1: Upload local files to S3
 local_folder = "../Final_Project_DE/archive"
 files_to_upload = [
-    "cbb22.csv",
-    "cbb22.csv",
-    "cbb22.csv",
-    "cbb22.csv",
+    "cbb13.csv",
+    "cbb14.csv",
+    "cbb15.csv",
     "cbb16.csv",
+    "cbb17.csv",
+    "cbb19.csv",
+    "cbb18.csv",
+    "cbb21.csv",
+    "cbb22.csv",
+    "cbb23.csv",
+    "cbb24.csv",
     "cbb.csv",
-    "cbb24.csv",  # Add all necessary files here
 ]
 
 for file_name in files_to_upload:

@@ -3,7 +3,8 @@ import pandas as pd
 from datetime import datetime
 from sklearn.preprocessing import LabelEncoder
 import logging
-from mylib.lib import data_split_to_feature_outcome, model_execution, rank_teams_produce_top_68, postseason_result, post_season_mapping
+from mylib.lib import data_split_to_feature_outcome, model_execution, rank_teams_produce_top_68, postseason_result, post_season_mapping, upload_to_s3, read_s3_csv, write_s3_csv
+import boto3
 
 logging.basicConfig(
     filename='data_processing.log',
@@ -11,9 +12,14 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+s3 = boto3.client("s3")
+bucket_name = "cbb-data-engg"
+input_prefix = "Final_Project_DE/archive/"
+output_prefix = "Final_Project_DE/"
+
 logging.info("Loading training and testing datasets.")
-cbb = pd.read_csv('../Final_Project_DE/train_data.csv')
-cbb24 = pd.read_csv('../Final_Project_DE/test_data.csv')
+cbb = read_s3_csv(bucket_name, f"{output_prefix}train_data.csv")
+cbb24 = read_s3_csv(bucket_name, f"{output_prefix}test_data.csv")
 
 features = [
     'ADJOE', 'ADJDE', 'BARTHAG', 'EFG_O', 'EFG_D', 'TOR', 'TORD', 'ORB',
@@ -28,7 +34,6 @@ cbb24_seedless = cbb24[features]
 cbb24['predicted_seed_score'] = model_execution(cbb24_seedless, X, y)
 
 cbb24 = rank_teams_produce_top_68(cbb24, 'predicted_seed_score')
-
 
 current_data = pd.read_csv('../Final_Project_DE/current_cbb_live_data.csv')
 

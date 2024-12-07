@@ -6,6 +6,9 @@ from pygam import LinearGAM, s
 import logging
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
+import boto3
+from io import StringIO
+import pandas as pd
 
 
 logging.basicConfig(
@@ -133,3 +136,39 @@ def post_season_mapping (df, col) :
     }
     logging.info("Mapping assigned labels back to POSTSEASON names.")
     return df[col].map(postseason_mapping)
+
+# S3 Configuration
+s3 = boto3.client("s3")
+bucket_name = "cbb-data-engg"
+input_prefix = "Final_Project_DE/archive/"
+output_prefix = "Final_Project_DE/"
+
+
+def upload_to_s3(local_path, bucket, s3_key):
+    """Upload a local file to S3."""
+    try:
+        s3.upload_file(local_path, bucket, s3_key)
+        logging.info(f"Uploaded {local_path} to S3 as {s3_key}.")
+    except Exception as e:
+        logging.error(f"Error uploading {local_path} to S3: {e}")
+        raise e
+
+def read_s3_csv(bucket, key):
+    """Read a CSV file from S3 into a Pandas DataFrame."""
+    try:
+        obj = s3.get_object(Bucket=bucket, Key=key)
+        return pd.read_csv(StringIO(obj["Body"].read().decode("utf-8")))
+    except Exception as e:
+        logging.error(f"Error reading {key} from S3: {e}")
+        raise
+
+def write_s3_csv(df, bucket, key):
+    """Write a Pandas DataFrame to S3 as a CSV file."""
+    try:
+        csv_buffer = StringIO()
+        df.to_csv(csv_buffer, index=False)
+        s3.put_object(Bucket=bucket, Key=key, Body=csv_buffer.getvalue())
+    except Exception as e:
+        logging.error(f"Error writing {key} to S3: {e}")
+        raise
+
