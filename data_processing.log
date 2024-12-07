@@ -263,3 +263,27 @@
 2024-12-06 17:15:52,543 - INFO - Selected features: ['feature1', 'feature2', 'feature3'].
 2024-12-06 17:15:52,546 - INFO - Updating seed assignments in the main DataFrame.
 2024-12-06 17:15:52,548 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-07 03:46:44,344 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 03:46:45,562 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-07 03:46:45,827 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-07 03:46:46,095 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-07 03:46:46,827 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-07 03:46:47,090 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-07 03:46:48,327 - INFO - Uploaded ../Final_Project_DE/archive/cbb.csv to S3 as Final_Project_DE/archive/cbb.csv.
+2024-12-07 03:46:48,982 - INFO - Uploaded ../Final_Project_DE/archive/cbb24.csv to S3 as Final_Project_DE/archive/cbb24.csv.
+2024-12-07 03:46:48,982 - INFO - Processing cbb22.csv.
+2024-12-07 03:46:49,598 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-07 03:46:50,103 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-07 03:46:50,104 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
+2024-12-07 03:46:50,107 - INFO - Combining and cleaning 'POSTSEASON' and 'SEED' columns in cbb16.csv.
+2024-12-07 03:46:50,509 - INFO - Combining multiple CSV files.
+2024-12-07 03:46:50,638 - INFO - Reading Final_Project_DE/archive/cbb13.csv from S3.
+2024-12-07 03:46:50,783 - INFO - Reading Final_Project_DE/archive/cbb14.csv from S3.
+2024-12-07 03:46:50,929 - INFO - Reading Final_Project_DE/archive/cbb15.csv from S3.
+2024-12-07 03:46:51,076 - INFO - Reading Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-07 03:46:51,207 - INFO - Reading Final_Project_DE/archive/cbb17.csv from S3.
+2024-12-07 03:46:51,364 - INFO - Reading Final_Project_DE/archive/cbb18.csv from S3.
+2024-12-07 03:46:51,499 - INFO - Reading Final_Project_DE/archive/cbb19.csv from S3.
+2024-12-07 03:46:51,635 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
+2024-12-07 03:46:52,982 - INFO - Processing cbb24.csv.
+2024-12-07 03:46:55,092 - INFO - Processing completed successfully.
