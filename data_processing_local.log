@@ -1,20 +1,52 @@
-2024-12-05 18:27:53,112 - INFO - Reading cbb22.csv.
-2024-12-05 18:27:53,118 - INFO - Renamed column 'EFGD_D' to 'EFG_D' in cbb22.csv.
-2024-12-05 18:27:53,118 - INFO - Saved updated cbb22.csv.
-2024-12-05 18:27:53,125 - INFO - Reading cbb16.csv and cbb.csv.
-2024-12-05 18:27:53,131 - INFO - Filtering rows for the year 2016 in cbb.csv.
-2024-12-05 18:27:53,131 - INFO - Merging cbb16.csv with filtered cbb.csv for 'POSTSEASON' and 'SEED' columns.
-2024-12-05 18:27:53,132 - INFO - Combined and cleaned 'POSTSEASON' and 'SEED' columns in cbb16.csv.
-2024-12-05 18:27:53,133 - INFO - Saved updated cbb16.csv.
-2024-12-05 18:27:53,171 - INFO - Reading ../Final_Project_DE/archive/cbb21.csv.
-2024-12-05 18:27:53,173 - INFO - Reading ../Final_Project_DE/archive/cbb23.csv.
-2024-12-05 18:27:53,174 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
-2024-12-05 18:27:53,174 - INFO - Reading ../Final_Project_DE/archive/cbb19.csv.
-2024-12-05 18:27:53,175 - INFO - Reading ../Final_Project_DE/archive/cbb18.csv.
-2024-12-05 18:27:53,176 - INFO - Reading ../Final_Project_DE/archive/cbb15.csv.
-2024-12-05 18:27:53,177 - INFO - Reading ../Final_Project_DE/archive/cbb14.csv.
-2024-12-05 18:27:53,178 - INFO - Reading ../Final_Project_DE/archive/cbb16.csv.
-2024-12-05 18:27:53,178 - INFO - Reading ../Final_Project_DE/archive/cbb17.csv.
-2024-12-05 18:27:53,179 - INFO - Reading ../Final_Project_DE/archive/cbb13.csv.
-2024-12-05 18:27:53,217 - INFO - Processing cbb24 dataframe.
-2024-12-05 18:27:53,227 - INFO - Saved train_data.csv and test_data.csv successfully.
+2024-12-07 00:37:11,605 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
+2024-12-07 00:37:11,611 - INFO - Renamed columns and saved updated ../Final_Project_DE/archive/cbb22.csv.
+2024-12-07 00:37:11,611 - INFO - Reading ../Final_Project_DE/archive/cbb.csv and ../Final_Project_DE/archive/cbb16.csv.
+2024-12-07 00:37:11,616 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-07 00:37:11,616 - INFO - Merging postseason and seed columns into cbb16.csv.
+2024-12-07 00:37:11,617 - INFO - Combining 'POSTSEASON' and 'SEED' columns.
+2024-12-07 00:37:11,620 - INFO - Saved updated ../Final_Project_DE/archive/cbb16.csv.
+2024-12-07 00:37:11,620 - INFO - Combining CSV files in ../Final_Project_DE/archive.
+2024-12-07 00:37:11,620 - INFO - Reading ../Final_Project_DE/archive/cbb21.csv.
+2024-12-07 00:37:11,621 - INFO - Reading ../Final_Project_DE/archive/cbb23.csv.
+2024-12-07 00:37:11,622 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
+2024-12-07 00:37:11,623 - INFO - Reading ../Final_Project_DE/archive/cbb19.csv.
+2024-12-07 00:37:11,623 - INFO - Reading ../Final_Project_DE/archive/cbb18.csv.
+2024-12-07 00:37:11,624 - INFO - Reading ../Final_Project_DE/archive/cbb15.csv.
+2024-12-07 00:37:11,625 - INFO - Reading ../Final_Project_DE/archive/cbb14.csv.
+2024-12-07 00:37:11,626 - INFO - Reading ../Final_Project_DE/archive/cbb16.csv.
+2024-12-07 00:37:11,627 - INFO - Reading ../Final_Project_DE/archive/cbb17.csv.
+2024-12-07 00:37:11,628 - INFO - Reading ../Final_Project_DE/archive/cbb13.csv.
+2024-12-07 00:37:11,647 - INFO - Saved combined data to train_data.csv.
+2024-12-07 00:37:11,647 - INFO - Processing ../Final_Project_DE/archive/cbb24.csv.
+2024-12-07 00:37:11,650 - INFO - Saved test_data.csv.
+2024-12-07 01:31:36,335 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:31:36,378 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
+2024-12-07 01:31:36,383 - INFO - Renamed columns and saved updated ../Final_Project_DE/archive/cbb22.csv.
+2024-12-07 01:31:36,383 - INFO - Reading ../Final_Project_DE/archive/cbb.csv and ../Final_Project_DE/archive/cbb16.csv.
+2024-12-07 01:31:36,387 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-07 01:31:36,387 - INFO - Merging postseason and seed columns into cbb16.csv.
+2024-12-07 01:31:36,388 - INFO - Combining 'POSTSEASON' and 'SEED' columns.
+2024-12-07 01:31:36,391 - INFO - Saved updated ../Final_Project_DE/archive/cbb16.csv.
+2024-12-07 01:31:36,391 - INFO - Combining CSV files in ../Final_Project_DE/archive.
+2024-12-07 01:31:36,391 - INFO - Reading ../Final_Project_DE/archive/cbb21.csv.
+2024-12-07 01:31:36,392 - INFO - Reading ../Final_Project_DE/archive/cbb23.csv.
+2024-12-07 01:31:36,393 - INFO - Reading ../Final_Project_DE/archive/cbb22.csv.
+2024-12-07 01:31:36,394 - INFO - Reading ../Final_Project_DE/archive/cbb19.csv.
+2024-12-07 01:31:36,395 - INFO - Reading ../Final_Project_DE/archive/cbb18.csv.
+2024-12-07 01:31:36,396 - INFO - Reading ../Final_Project_DE/archive/cbb15.csv.
+2024-12-07 01:31:36,396 - INFO - Reading ../Final_Project_DE/archive/cbb14.csv.
+2024-12-07 01:31:36,397 - INFO - Reading ../Final_Project_DE/archive/cbb16.csv.
+2024-12-07 01:31:36,398 - INFO - Reading ../Final_Project_DE/archive/cbb17.csv.
+2024-12-07 01:31:36,399 - INFO - Reading ../Final_Project_DE/archive/cbb13.csv.
+2024-12-07 01:31:36,417 - INFO - Saved combined data to train_data.csv.
+2024-12-07 01:31:36,417 - INFO - Processing ../Final_Project_DE/archive/cbb24.csv.
+2024-12-07 01:31:36,420 - INFO - Saved test_data.csv.
+2024-12-07 01:31:36,783 - INFO - ../Final_Project_DE/archive/cbb22.csv and Final_Project_DE/archive/cbb22.csv are identical.
+2024-12-07 01:31:37,146 - INFO - ../Final_Project_DE/archive/cbb.csv and Final_Project_DE/archive/cbb.csv are identical.
+2024-12-07 01:31:37,244 - INFO - ../Final_Project_DE/archive/cbb16.csv and Final_Project_DE/archive/cbb16.csv are identical.
+2024-12-07 01:31:37,335 - INFO - ../Final_Project_DE/archive/cbb24.csv and Final_Project_DE/archive/cbb24.csv are identical.
+2024-12-07 01:31:37,432 - INFO - ../Final_Project_DE/archive/cbb20.csv and Final_Project_DE/archive/cbb20.csv are identical.
+2024-12-07 01:31:37,512 - ERROR - Error calculating MD5 for S3 object Final_Project_DE/archive/train_data.csv: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+2024-12-07 01:31:37,512 - ERROR - Error verifying train_data.csv and Final_Project_DE/archive/train_data.csv: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+2024-12-07 01:31:37,581 - ERROR - Error calculating MD5 for S3 object Final_Project_DE/archive/test_data.csv: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+2024-12-07 01:31:37,581 - ERROR - Error verifying test_data.csv and Final_Project_DE/archive/test_data.csv: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.

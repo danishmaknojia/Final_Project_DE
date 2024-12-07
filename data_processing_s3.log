@@ -1,0 +1,87 @@
+2024-12-07 01:03:44,337 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
+2024-12-07 01:03:44,724 - INFO - Renaming columns: {'EFGD_D': 'EFG_D'}.
+2024-12-07 01:03:45,244 - INFO - Saved Final_Project_DE/archive/cbb22.csv to S3.
+2024-12-07 01:03:45,245 - INFO - Reading Final_Project_DE/archive/cbb.csv and Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-07 01:03:45,245 - INFO - Reading Final_Project_DE/archive/cbb.csv from S3.
+2024-12-07 01:03:46,447 - INFO - Reading Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-07 01:03:46,601 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-07 01:03:46,602 - INFO - Merging postseason and seed columns into cbb16.csv.
+2024-12-07 01:03:46,605 - INFO - Combining 'POSTSEASON' and 'SEED' columns.
+2024-12-07 01:03:46,934 - INFO - Saved Final_Project_DE/archive/cbb16.csv to S3.
+2024-12-07 01:03:46,935 - INFO - Combining CSV files from Final_Project_DE/archive/ on S3.
+2024-12-07 01:03:46,935 - ERROR - Error combining CSV files: name 'os' is not defined
+2024-12-07 01:03:46,935 - INFO - Processing Final_Project_DE/archive/cbb24.csv from S3.
+2024-12-07 01:03:46,935 - INFO - Reading Final_Project_DE/archive/cbb24.csv from S3.
+2024-12-07 01:03:47,396 - INFO - Saved Final_Project_DE/test_data.csv to S3.
+2024-12-07 01:03:47,397 - INFO - Saved Final_Project_DE/test_data.csv.
+2024-12-07 01:04:04,534 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
+2024-12-07 01:04:04,899 - INFO - Renaming columns: {'EFGD_D': 'EFG_D'}.
+2024-12-07 01:04:05,409 - INFO - Saved Final_Project_DE/archive/cbb22.csv to S3.
+2024-12-07 01:04:05,409 - INFO - Reading Final_Project_DE/archive/cbb.csv and Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-07 01:04:05,409 - INFO - Reading Final_Project_DE/archive/cbb.csv from S3.
+2024-12-07 01:04:05,697 - INFO - Reading Final_Project_DE/archive/cbb16.csv from S3.
+2024-12-07 01:04:05,788 - INFO - Filtering rows for the year 2016 in cbb.csv.
+2024-12-07 01:04:05,789 - INFO - Merging postseason and seed columns into cbb16.csv.
+2024-12-07 01:04:05,792 - INFO - Combining 'POSTSEASON' and 'SEED' columns.
+2024-12-07 01:04:06,151 - INFO - Saved Final_Project_DE/archive/cbb16.csv to S3.
+2024-12-07 01:04:06,151 - INFO - Combining CSV files from Final_Project_DE/archive/ on S3.
+2024-12-07 01:04:06,151 - ERROR - Error combining CSV files: name 'os' is not defined
+2024-12-07 01:04:06,151 - INFO - Processing Final_Project_DE/archive/cbb24.csv from S3.
+2024-12-07 01:04:06,151 - INFO - Reading Final_Project_DE/archive/cbb24.csv from S3.
+2024-12-07 01:04:06,565 - INFO - Saved Final_Project_DE/test_data.csv to S3.
+2024-12-07 01:04:06,565 - INFO - Saved Final_Project_DE/test_data.csv.
+2024-12-07 01:05:39,266 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
+2024-12-07 01:09:03,520 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:09:04,459 - INFO - Saved Final_Project_DE/archive/cbb22.csv to S3.
+2024-12-07 01:09:05,387 - INFO - Saved Final_Project_DE/archive/cbb16.csv to S3.
+2024-12-07 01:09:07,553 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:09:07,909 - INFO - Saved Final_Project_DE/test_data.csv to S3.
+2024-12-07 01:14:13,110 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:14:13,154 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:14:14,488 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:14:14,488 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:18:44,112 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:18:44,156 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:18:46,527 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:18:46,528 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:18:46,528 - INFO - Uploading path_to_your_project/train_data.csv to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:18:46,530 - ERROR - Error uploading file to S3: [Errno 2] No such file or directory: 'path_to_your_project/train_data.csv'
+2024-12-07 01:19:10,588 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:19:10,627 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:19:12,849 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:19:12,849 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:19:12,849 - INFO - Uploading Final_PROEJECT_DE/train_data.csv to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:19:12,851 - ERROR - Error uploading file to S3: [Errno 2] No such file or directory: 'Final_PROEJECT_DE/train_data.csv'
+2024-12-07 01:19:34,281 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:19:34,321 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:19:36,610 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:19:36,610 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:19:36,610 - INFO - Uploading Final_Project_DE/train_data.csv to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:19:36,612 - ERROR - Error uploading file to S3: [Errno 2] No such file or directory: 'Final_Project_DE/train_data.csv'
+2024-12-07 01:19:52,464 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:19:52,503 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:19:53,636 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:19:53,637 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:19:53,637 - INFO - Uploading ../train_data.csv to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:19:53,639 - ERROR - Error uploading file to S3: [Errno 2] No such file or directory: '../train_data.csv'
+2024-12-07 01:20:01,800 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:20:01,840 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:20:02,874 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:20:02,874 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:20:02,875 - INFO - Uploading ../Final_Project_DE/train_data.csv to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:20:03,286 - INFO - Successfully uploaded to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:27:10,480 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:27:10,552 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:27:13,492 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:27:13,493 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:27:13,493 - INFO - Uploading ../Final_Project_DE/train_data.csv to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:27:14,276 - INFO - Successfully uploaded to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:27:22,304 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:27:22,343 - INFO - Processing Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:27:24,622 - INFO - Saved Final_Project_DE/train_data.csv to S3.
+2024-12-07 01:27:24,622 - INFO - Successfully processed Final_Project_DE/archive/cbb.csv into Final_Project_DE/train_data.csv.
+2024-12-07 01:27:24,623 - INFO - Uploading ../Final_Project_DE/train_data.csv to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:27:25,430 - INFO - Successfully uploaded to s3://cbb-data-engg/Final_Project_DE/train_data.csv
+2024-12-07 01:27:25,438 - INFO - Processing Final_Project_DE/archive/cbb24.csv to generate test dataset.
+2024-12-07 01:27:26,211 - INFO - Saved Final_Project_DE/test_data.csv to S3.
+2024-12-07 01:27:26,211 - INFO - Successfully processed and uploaded Final_Project_DE/test_data.csv to S3.

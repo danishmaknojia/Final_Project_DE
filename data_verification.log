@@ -1,0 +1,54 @@
+2024-12-06 23:59:10,375 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-06 23:59:10,943 - INFO - The local file and S3 object are identical.
+2024-12-07 00:03:06,210 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:03:06,746 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:03:06,835 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:03:06,952 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:05:52,515 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:05:53,051 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:05:53,133 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:05:53,220 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:12:32,112 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:12:32,736 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:12:32,819 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:12:32,898 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:17:17,003 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:17:17,599 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:17:17,681 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:17:17,762 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:17:51,612 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:17:52,167 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:17:52,246 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:17:52,342 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:30:07,347 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:30:07,789 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:30:07,867 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:30:08,038 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:39:39,688 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:39:40,407 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:39:40,503 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:39:40,619 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:45:17,578 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:45:18,149 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:45:18,249 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:45:18,352 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 00:54:49,072 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 00:54:49,953 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 00:54:50,054 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 00:54:50,142 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 01:14:51,640 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:14:52,246 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 01:14:52,337 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 01:14:52,491 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 01:14:56,937 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:14:57,460 - WARNING - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv differ.
+2024-12-07 01:14:57,549 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 01:14:57,634 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 01:27:48,574 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:27:49,124 - INFO - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv are identical.
+2024-12-07 01:27:49,215 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 01:27:49,318 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.
+2024-12-07 01:31:17,509 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 01:31:18,202 - INFO - ../Final_Project_DE/train_data.csv and Final_Project_DE/train_data.csv are identical.
+2024-12-07 01:31:18,317 - INFO - ../Final_Project_DE/test_data.csv and Final_Project_DE/test_data.csv are identical.
+2024-12-07 01:31:18,428 - WARNING - ../Final_Project_DE/current_cbb_live_data.csv and Final_Project_DE/current_cbb_live_data.csv differ.

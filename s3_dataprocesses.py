@@ -132,7 +132,19 @@ def extract_bart_torvik_data():
 def process_local_files():
     """Upload and process local files."""
     local_folder = "../Final_Project_DE/archive"
-    files_to_upload = ["cbb22.csv", "cbb16.csv", "cbb.csv", "cbb24.csv"]
+    files_to_upload = [
+        "cbb22.csv",
+        "cbb16.csv",
+        "cbb.csv",
+        "cbb24.csv",
+        "cbb13.csv",
+        "cbb14.csv",
+        "cbb15.csv",
+        "cbb17.csv",
+        "cbb18.csv",
+        "cbb19.csv",
+        "cbb20.csv",
+    ]
 
     for file_name in files_to_upload:
         local_file_path = f"{local_folder}/{file_name}"
@@ -160,7 +172,6 @@ def process_s3_files():
     df_16.drop(
         columns=["POSTSEASON_x", "POSTSEASON_y", "SEED_x", "SEED_y"], inplace=True
     )
-
     write_s3_csv(df_16, bucket_name, f"{input_prefix}cbb16.csv")
 
     logging.info("Combining multiple CSV files.")
