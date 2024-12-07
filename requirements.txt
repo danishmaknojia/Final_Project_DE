@@ -1,3 +1,7 @@
 pandas
 boto3
+numpy
 scikit-learn
+pygam
+requests
+beautifulsoup4
