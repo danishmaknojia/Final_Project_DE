@@ -437,3 +437,12 @@
 2024-12-07 11:29:58,603 - INFO - Applying the model to current data.
 2024-12-07 11:29:58,606 - INFO - Assigning labels systematically.
 2024-12-07 11:29:58,606 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-07 15:39:25,386 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 15:40:59,337 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 15:41:00,502 - INFO - Uploaded DataFrame to S3 as test.csv.
+2024-12-07 15:41:00,655 - ERROR - Error reading test.csv from S3: No columns to parse from file
+2024-12-07 15:43:24,746 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 15:43:25,951 - INFO - Uploaded DataFrame to S3 as test.csv.
+2024-12-07 15:43:26,176 - ERROR - Error reading test.csv from S3: No columns to parse from file
+2024-12-07 15:44:33,284 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 15:44:34,489 - INFO - Uploaded DataFrame to S3 as test.csv.
