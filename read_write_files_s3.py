@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 import boto3
-from mylib.lib import upload_to_s3, read_s3_csv, write_s3_csv
+from mylib.lib import upload_to_s3, read_s3_csv, write_s3_csv, extract_bart_torvik_data
 
 logging.basicConfig(
     filename="data_processing.log",
@@ -129,3 +129,8 @@ write_s3_csv(combined_df, bucket_name, f"{output_prefix}train_data.csv")
 write_s3_csv(cbb24, bucket_name, f"{output_prefix}test_data.csv")
 
 logging.info("Processing completed successfully.")
+
+
+bart_torvik_df = extract_bart_torvik_data()
+write_s3_csv(bart_torvik_df, bucket_name, f"{output_prefix}current_cbb_live_data.csv")
+logging.info("Bart Torvik data extraction and upload completed.")

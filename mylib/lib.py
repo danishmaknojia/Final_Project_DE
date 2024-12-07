@@ -9,6 +9,9 @@ from sklearn.metrics import classification_report
 import boto3
 from io import StringIO
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
 
 
 logging.basicConfig(
@@ -172,3 +175,77 @@ def write_s3_csv(df, bucket, key):
         logging.error(f"Error writing {key} to S3: {e}")
         raise
 
+def extract_bart_torvik_data():
+    """Extract, transform, and upload Bart Torvik data to S3."""
+    logging.info("Extracting data from Bart Torvik.")
+    url = "https://www.barttorvik.com/"
+    response = requests.get(url)
+
+    # Parse the HTML
+    soup = BeautifulSoup(response.text, "html.parser")
+    table = soup.find("table")
+    rows = table.find_all("tr")
+
+    data = []
+    for row in rows:
+        cols = row.find_all("td")
+        cols = [ele.text.strip() for ele in cols]
+        data.append(cols)
+
+    # Convert to DataFrame and transform
+    df = pd.DataFrame(data)
+    df = df.dropna(how="all").reset_index(drop=True)
+
+    df.columns = [
+        "RK",
+        "TEAM",
+        "CONF",
+        "G",
+        "REC",
+        "ADJOE",
+        "ADJDE",
+        "BARTHAG",
+        "EFG_O",
+        "EFG_D",
+        "TOR",
+        "TORD",
+        "ORB",
+        "DRB",
+        "FTR",
+        "FTRD",
+        "2P_O",
+        "2P_D",
+        "3P_O",
+        "3P_D",
+        "3PR",
+        "3PRD",
+        "ADJ_T",
+        "WAB",
+    ]
+    df = df[
+        [
+            "TEAM",
+            "CONF",
+            "G",
+            "ADJOE",
+            "ADJDE",
+            "BARTHAG",
+            "EFG_O",
+            "EFG_D",
+            "TOR",
+            "TORD",
+            "ORB",
+            "DRB",
+            "FTR",
+            "FTRD",
+            "2P_O",
+            "2P_D",
+            "3P_O",
+            "3P_D",
+            "ADJ_T",
+            "WAB",
+        ]
+    ]
+    return df
+
+    

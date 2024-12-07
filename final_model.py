@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 from sklearn.preprocessing import LabelEncoder
 import logging
-from mylib.lib import data_split_to_feature_outcome, model_execution, rank_teams_produce_top_68, postseason_result, post_season_mapping, upload_to_s3, read_s3_csv, write_s3_csv
+from mylib.lib import data_split_to_feature_outcome, model_execution, rank_teams_produce_top_68, postseason_result, post_season_mapping, read_s3_csv, write_s3_csv
 import boto3
 
 logging.basicConfig(
@@ -35,7 +35,7 @@ cbb24['predicted_seed_score'] = model_execution(cbb24_seedless, X, y)
 
 cbb24 = rank_teams_produce_top_68(cbb24, 'predicted_seed_score')
 
-current_data = pd.read_csv('../Final_Project_DE/current_cbb_live_data.csv')
+current_data = read_s3_csv(bucket_name, f"{output_prefix}current_cbb_live_data.csv")
 
 logging.info("Execute model on our current dataset i.e. current_cbb_live_data to get the seeds for 2024-2025 season")
 
@@ -47,7 +47,10 @@ current_data = rank_teams_produce_top_68(current_data, 'predicted_seed_score')
 
 current_date = datetime.now().strftime("%Y%m%d")
 file_name = f"seeding_2025_{current_date}.csv"
-current_data[['TEAM', 'predicted_seed_with_update']].sort_values('predicted_seed_with_update').dropna(subset=['predicted_seed_with_update']).to_csv(file_name)
+seed_data = current_data[['TEAM', 'predicted_seed_with_update']].sort_values('predicted_seed_with_update').dropna(subset=['predicted_seed_with_update'])
+
+write_s3_csv(seed_data, bucket_name, f"{output_prefix}{file_name}")
+#current_data[['TEAM', 'predicted_seed_with_update']].sort_values('predicted_seed_with_update').dropna(subset=['predicted_seed_with_update']).to_csv(file_name)
 
 # Preprocess the POSTSEASON column in cbb
 cbb = cbb[cbb['POSTSEASON'].notnull()]  # Filter rows with POSTSEASON values
@@ -74,5 +77,6 @@ current_data_seeded['predicted_postseason_description'] = post_season_mapping(cu
 current_data_seeded.sort_values('predicted_postseason_label').head(16)
 
 current_date = datetime.now().strftime("%Y%m%d")
-file_name = f"cbb25_seeded_{current_date}.csv"
-current_data_seeded.to_csv(file_name, index=False)
+file_name_final = f"cbb25_seeded_{current_date}.csv"
+#current_data_seeded.to_csv(file_name, index=False)
+write_s3_csv(current_data_seeded, bucket_name, f"{output_prefix}{file_name_final}")
