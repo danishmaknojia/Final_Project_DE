@@ -125,64 +125,136 @@ Together, these interconnected projects offer a comprehensive tool for predictin
 
 ---
 
-## File Structure
+## **Microservice**
 
+### Purpose
+The microservices provide reusable Python functions for:
+- Data preprocessing and splitting.
+- Machine learning model training and prediction for tournament seeding.
+- Ranking teams and assigning tournament seeds.
+- Predicting postseason performance and mapping results.
+
+### Key Functionalities
+
+- **`data_split_to_feature_outcome`**: 
+  Splits a dataset into features (X) and outcomes (y) for modeling, ensuring the outcome is appropriately cast.
+
+- **`model_execution`**: 
+  - Trains a Generalized Additive Model (GAM) to predict NCAA tournament seeds based on basketball statistics.
+  - Outputs the predicted seeds as a numerical score.
+  - Scales data using `StandardScaler`.
+  - Evaluates performance using Mean Absolute Error (MAE).
+
+- **`rank_teams_produce_top_68`**: 
+  Ranks teams based on their seed scores and assigns seeds to the top 68 teams, respecting NCAA seeding rules.
+
+- **`postseason_result`**: 
+  Trains a Random Forest Classifier to predict the postseason stage for teams based on features and assigns probabilities to possible outcomes.
+
+- **`post_season_mapping`**: 
+  Maps numerical labels back to descriptive postseason outcomes (e.g., "Champion", "Elite Eight").
+
+#### Data Extraction Services
+- **`extract_bart_torvik_data`**: Scrapes Bart Torvik’s website for live basketball data and processes it into a structured format.
+
+#### AWS S3 Utility Services
+- **`upload_to_s3`**, **`read_s3_csv`**, **`write_s3_csv`**: Handle file operations (upload, download, and writing) with AWS S3.
+
+
+---
+
+## **Data Engineering**
+
+### Purpose
+This layer focuses on ingesting, cleaning, transforming, and preparing data for model training and prediction tasks.
+
+### Key Steps
+
+1. **Data Ingestion**:
+   - Local files are uploaded to AWS S3 for centralized storage.
+   - Files include historical basketball data and cleaned datasets from Bart Torvik.
+
+2. **Data Cleaning and Transformation**:
+   - Historical datasets (e.g., `cbb16.csv`) are merged and cleaned with postseason and seed data from related files (e.g., `cbb.csv`).
+   - Misnamed columns (e.g., `EFGD_D` to `EFG_D`) are corrected.
+   - Missing seed and postseason values are filled using combined data from multiple sources.
+
+3. **Dataset Combination**:
+   - Historical datasets are concatenated into a unified training dataset (`train_data.csv`).
+   - Current season data is processed separately into a test dataset (`test_data.csv`).
+
+4. **Feature Engineering**:
+   - Basketball statistics like `ADJOE`, `ADJDE`, `BARTHAG`, and more are used to create predictive features for tournament seeding and postseason outcomes.
+   - Current season data predictions are integrated with live updates from Bart Torvik.
+
+5. **Model Workflow**:
+   - **Training**: Features are prepared using the `data_split_to_feature_outcome` function and modeled with GAM for seed prediction and Random Forest for postseason prediction.
+   - **Prediction**: Trained models are applied to current data (`current_cbb_live_data.csv`) for the 2024-25 season.
+
+6. **Output Files**:
+   - Seeded data (`cbb25_seeded_{date}.csv`) and ranked predictions are generated for analysis.
+
+---
+
+## **Infrastructure as Code (IaC)**
+
+### Purpose
+AWS services and other tools are configured programmatically to ensure reproducibility, scalability, and maintainability.
+
+### Key Components
+
+#### Pipeline Automation with Makefile
+To ensure seamless execution, the data pipeline is triggered through a Makefile:
+
+```makefile
+upload_s3:
+    python read_write_files_s3.py
 ```
-FINAL_PROJECT_DE/
-├── archive/
-├── predictions/
-├── seeding/
-├── basketball_team_ratings.csv
-├── cbb_data.db
-├── CBB_to_Database.py
-├── current_cbb_live_data.csv
-├── data_clense.ipynb
-├── final_model.ipynb
-├── README.md
-├── test_data.csv
-└── train_data.csv
-```
+
+#### GitHub Actions Workflow
+The pipeline is automated on every push using the following steps:
+
+1. **AWS Credential Configuration**:
+   - Utilizes `aws-actions/configure-aws-credentials@v3` to authenticate with AWS.
+
+2. **Makefile Execution**:
+   - Triggers `make upload_s3` to process data and upload cleaned files to S3.
+
+#### AWS S3:
+- **Centralized Storage**:
+  - Raw, processed, and prediction output datasets are stored under organized folders.
+  - Input files stored under `Final_Project_DE/archive/`.
+  - Processed and prediction files stored under `Final_Project_DE/`.
+
+- **Automation via Python**:
+  - Functions automate S3 file operations:
+    - **`upload_to_s3`** for uploading local files to S3.
+    - **`read_s3_csv`** for reading files into Pandas DataFrames.
+    - **`write_s3_csv`** for writing processed datasets back to S3.
+  - The pipeline automates merging, cleaning, and generating output files.
+
+- **Log Management**:
+  - Logs generated for key operations using Python’s logging library, stored in `data_processing.log`.
+  - Tracks data ingestion, model training, predictions, and error handling.
+
+#### Scalability:
+- The modular pipeline can process additional seasons or integrate other data sources by simply adding files to the S3 bucket or updating features.
+
+#### Extensibility:
+- Current configurations can be integrated with CI/CD pipelines or serverless architectures (e.g., AWS Lambda) for fully automated workflows.
+
+---
 
 # TODO
+(architectural diagram)
+## **Load Test and Quantitative analysis**
 
--  Follow this for more clairty on the readme: https://github.com/nogibjj/Final_Project_Stock_Analysis
+---
 
-- LoadTest: https://youtu.be/SOu6hgklQRA?si=c5ks_mM8yQdBN1G1
+## **Instructions around cloning and rerunning**
 
-```
-Set up procedure:
+---
 
-1. pip install locust
+## **File Structure**
 
-2. create .py file i.e ->
-
-from locust import HttpUser, task, between
-
-
-class WebsiteUser(HttpUser):
-    wait_time = between(a, b)  -> User wait time
-
-    @task
-    def load_test(self):
-        self.client.get(".....") -> whatever the endpoint is
-
-
-In the terminal, enter the following command to run the load test:
-locust -f Loadtest.py --csv=results/loadtest
-
-Go to http://localhost:8089/ to see the load test in action.
-```
-
-- Picture on the flow from Code -> DB -> AWS -> App running 
-
-- Add photos to the app structure mentioned
-
-- Update the file structure above 
-
-- Update some information about flask, rds, lightsail and more 
-
-- Infrastructure as Code (IaC)
-
-- Microservice
-
-- talk about our requirements.txt file and what all is needed in specific 
+---
