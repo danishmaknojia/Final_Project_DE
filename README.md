@@ -1,4 +1,4 @@
-# NCAA Basketball Tournament Prediction Project
+# NCAA Basketball Tournament Prediction Project 
 
 [![Run Data Processing Script](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/CICD.yml/badge.svg)](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/CICD.yml)
 
