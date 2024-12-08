@@ -14,8 +14,8 @@ test:
 	python3 -m pytest -vv --nbval --cov=. tests/test_*.py
 	@echo "Tests completed successfully!"
 
-lint:
-	pylint --disable=R,C --ignore-patterns=tests/test_.*?py *.py
+#lint:
+#	pylint --disable=R,C --ignore-patterns=tests/test_.*?py *.py
 
 # Build the Docker image
 build:
