@@ -1,40 +1,53 @@
-name: Run Data Processing Script
+name: Build, Test, and Push Docker Image to ECR
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - naki_combined
 
 jobs:
-  run-script:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout the repository
-    - name: Checkout Code
-      uses: actions/checkout@v3
+    # Step 1: Check out the repository
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-    # Step 2: Set up Python
+    # Step 2: Set up Python and install dependencies (if using Python for tests)
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: '3.9'  # or your desired Python version
 
-    # Step 3: Install dependencies
-    - name: Install Dependencies
+    - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
+        python3 -m pip install --upgrade pip
         pip install -r requirements.txt
+        
+    # Step 3: Run lint
+    - name: lint
+      run: make lint
 
-    # Step 4: Configure AWS credentials
-    - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v3
-      with:
-        aws-access-key-id: AKIAVRUVVGRL64HFQ3X2
-        aws-secret-access-key: 9L6a2CO6+AUojDbI6qJu79VqarnGJXpuAFGJiUQ2
-        aws-region: us-west-2 # Change to your region if different
+    # Step 4: Run tests
+    - name: Run tests
+      run: make tests  # Assuming `make tests` runs your test suite
 
-    # Step 5: Run the Python script
-    - name: Run Data Processing Script
-      run: make upload_s3
+    # Step 5: Log in to Amazon ECR
+    - name: Log in to Amazon ECR
+      run: |
+        aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 381492212823.dkr.ecr.us-east-1.amazonaws.com
+
+    # Step 6: Build the Docker image
+    - name: Build Docker image
+      run: make build
+
+    # Step 7: Tag the Docker image for ECR
+    - name: Tag Docker image for ECR
+      run: docker tag ids706_cbb:latest 381492212823.dkr.ecr.us-east-1.amazonaws.com/ids706_cbb:latest
+
+    # Step 8: Push the Docker image to ECR
+    - name: Push Docker image to Amazon ECR
+      run: docker push 381492212823.dkr.ecr.us-east-1.amazonaws.com/ids706_cbb:latest
