@@ -469,3 +469,26 @@
 2024-12-06 22:01:32,265 - INFO - Reading Final_Project_DE/archive/cbb22.csv from S3.
 2024-12-06 22:01:33,478 - INFO - Processing cbb24.csv.
 2024-12-06 22:01:35,267 - INFO - Processing completed successfully.
+2024-12-08 12:36:15,418 - INFO - Found credentials in environment variables.
+2024-12-08 12:36:15,488 - INFO - Loading training and testing datasets.
+2024-12-08 12:36:19,780 - INFO - Filtering rows with non-null SEED values.
+2024-12-08 12:36:19,784 - INFO - Selected features: ['ADJOE', 'ADJDE', 'BARTHAG', 'EFG_O', 'EFG_D', 'TOR', 'TORD', 'ORB', 'DRB', 'FTR', 'FTRD', 'ADJ_T', 'WAB'].
+2024-12-08 12:36:19,786 - INFO - Splitting data into training and testing sets.
+2024-12-08 12:36:19,788 - INFO - Scaling features using StandardScaler.
+2024-12-08 12:36:19,791 - INFO - Fitting the GAM model.
+2024-12-08 12:36:20,144 - INFO - Predicting on test data.
+2024-12-08 12:36:27,678 - INFO - Predicting seeds for cbb24.
+2024-12-08 12:36:27,691 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-08 12:36:29,449 - INFO - Execute model on our current dataset i.e. current_cbb_live_data to get the seeds for 2024-2025 season
+2024-12-08 12:36:29,450 - INFO - Splitting data into training and testing sets.
+2024-12-08 12:36:29,451 - INFO - Scaling features using StandardScaler.
+2024-12-08 12:36:29,454 - INFO - Fitting the GAM model.
+2024-12-08 12:36:29,822 - INFO - Predicting on test data.
+2024-12-08 12:36:36,947 - INFO - Predicting seeds for cbb24.
+2024-12-08 12:36:36,960 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-08 12:36:38,165 - INFO - Run model to obtain predictions on who will be winning march madness for the 2024-25 season
+2024-12-08 12:36:38,167 - INFO - Training Random Forest Classifier.
+2024-12-08 12:36:38,291 - INFO - Evaluating model performance on the test set.
+2024-12-08 12:36:38,299 - INFO - Applying the model to current data.
+2024-12-08 12:36:38,302 - INFO - Assigning labels systematically.
+2024-12-08 12:36:38,303 - INFO - Mapping assigned labels back to POSTSEASON names.
