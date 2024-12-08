@@ -1,5 +1,3 @@
-import pandas as pd
-import pandas as pd
 from datetime import datetime
 from sklearn.preprocessing import LabelEncoder
 import logging

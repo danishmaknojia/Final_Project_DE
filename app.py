@@ -5,15 +5,14 @@ from datetime import datetime
 import pytz
 import os
 import logging
-
-
-
         
 # Initialize the Flask application
 app = Flask(__name__)
 
-with open("read_write_files_s3.py") as f: exec(f.read())
-with open("final_model.py") as f: exec(f.read())
+with open("read_write_files_s3.py") as f: 
+    exec(f.read())
+with open("final_model.py") as f: 
+    exec(f.read())
 
 # Configure logging
 logging.basicConfig(

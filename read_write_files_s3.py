@@ -1,9 +1,6 @@
 import pandas as pd
 import logging
 import boto3
-import requests
-from bs4 import BeautifulSoup
-from io import StringIO
 from mylib.lib import upload_to_s3, read_s3_csv, write_s3_csv, extract_bart_torvik_data
 
 logging.basicConfig(

@@ -15,7 +15,7 @@ test:
 	@echo "Tests completed successfully!"
 
 lint:
-	pylint --disable=R,C --ignore-patterns=tests/test_.*?py *.py
+	ruff check *.py mylib/*.py
 
 # Build the Docker image
 build:
