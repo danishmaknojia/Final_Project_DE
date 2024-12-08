@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from functions import (
+from mylib.functions import (
     findTeamLogo,
     findConferenceLogo,
     loadTeams,
