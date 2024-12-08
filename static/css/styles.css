@@ -1,0 +1,158 @@
+/* Reset default styles */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set the background image for the body */
+body {
+    padding: 75px 20px 75px 20px; /* top right bottom left */
+    background-image: url('/static/images/bcg.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Keeps the focus centered */
+    background-attachment: fixed; /* Prevents the image from moving when scrolling */
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 623px; /* Adjusts the distance from the left */
+}
+
+
+/* Styles for the seed-container and boxes */
+.seed-container {
+    padding: 10px 20px 15px 5px; /* top right bottom left */
+    /*padding-left: 0px;*/
+    margin-left: 600px; /* Use margin to shift content instead of padding */    
+    margin-right: auto;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);  Four columns for 16 groups */
+    grid-template-columns: repeat(2, 1fr);  /* Four columns for 16 groups */
+    gap: 25px; /* Space between the boxes */
+    width: 60%; /* Adjust the width to keep box sizes consistent */
+    max-width: 500px; /* Reduce max-width for two columns */
+    /*margin: 0 auto;*/
+}
+
+.seed-box {
+    background-color: rgba(68, 68, 68, 0.9);
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    width: 350px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    display: flex;
+    flex-direction: column; /* Ensures content inside the box aligns properly */
+    justify-content: space-between; /* Spreads content evenly within the box */
+}
+
+.seed-box:hover {
+    transform: scale(1.05);
+}
+
+.seed-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.seed-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seed-box ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seed-box ul li img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+/* Styles for the Predict Final Four button */
+.predict-button {
+    position: fixed; /* Fixes the button to a specific position in the viewport */
+    bottom: 100px; /* Distance from the bottom of the viewport */
+    left: 165px; /* Distance from the left of the viewport */
+    margin-top: 30px;
+    background-color: #ffcc00;
+    color: #444444;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.predict-button:hover {
+    background-color: #ff9900;
+    transform: translateY(-2px);
+}
+
+.predict-button:active {
+    transform: translateY(1px);
+}
+
+
+
+
+/* Spinner overlay */
+/* .loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+/*    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+} */
+
+/* Spinner animation */
+/* .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+} */
+
+/* Keyframes for spinner animation */
+/* @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+

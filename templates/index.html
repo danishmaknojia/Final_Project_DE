@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Madness Predictor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #013369; /* Light gray for a neutral background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Banner Section with Image */
+        .banner {
+            background: url('/static/images/bb2.jpeg') no-repeat center center;
+            background-size: cover; /* Ensures the entire image fits without zooming */
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            position: relative; /* Allows layering */
+        }
+
+        /* Darken the background slightly */
+        .banner::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(51, 71, 91, 0.7); /* Slightly darker overlay */
+            z-index: -1; /* Ensures overlay is behind text */
+        }
+
+        /* Header Content Over the Banner */
+        .header-content {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+            padding: 20px 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+            color: #ffffff; /* White for strong contrast */
+        }
+
+        .header-subtitle {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            color: #ffffff; /* #dbe5ef;  Light grey-blue */
+        }
+
+        /* Unified Content Box */
+        .content-box {
+            background-color: white; /* Light grey-blue */
+            color: #2a3a4a; /* Darker grey-blue for text */
+            padding: 20px 25px; /* Balanced padding */
+            border-radius: 1px; /* Rounded corners for a modern look */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            margin: 30px auto; /* Space between elements and center alignment */
+            max-width: 2000px; /* Ensure readability on large screens */
+            width: 99%; /* Responsive design */
+            text-align: center; /* Center text content */
+            position: relative; /* For potential layering enhancements */
+        }
+        
+        /* Text Styling Inside Content Box */
+        .content-box p {
+            margin: 0 0 15px; /* Space between paragraphs */
+            color: #33475b; /* Slightly darker grey-blue */
+            font-size: 1rem; /* Consistent, readable font size */
+            line-height: 1.6; /* Comfortable spacing for reading */
+        }
+        
+        /* Optional: Add a heading style */
+        .content-box h3 {
+            margin-bottom: 20px; /* Spacing below the heading */
+            color: #2a3a4a; /* Darker grey-blue for headings */
+            font-size: 1.5rem; /* Distinguish heading size */
+            font-weight: bold; /* Emphasize heading */
+        }
+        
+
+        /* Content Container */
+        .content-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+
+        /* Subsection Styling */
+        .subsection {
+            background-color: #white; /* Light grey tint */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .subsection h3 {
+            margin-bottom: 30px; /* Adjust this value to your liking */
+            text-align: center;
+        }
+        
+
+        /* Images and Buttons */
+        .logoTeam {
+            width: 40px;
+            height: 40px;
+        }
+        .logoConf {
+            width: 40px;
+            height: 40px;
+        }
+        .logoTeamRanked {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Effect for logo pop-out on hover */
+        .logoTeam, .logoConf, .logoTeamRanked {
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+        
+        .logoTeam:hover, .logoConf:hover, .logoTeamRanked:hover {
+            transform: scale(1.2); /* Enlarge logo on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow to emphasize the effect */
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .next-page-button {
+            display: inline-block;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .next-page-button:hover {
+            background-color: #495057;
+            transform: scale(1.05);
+        }
+
+        /* Seed Groups */
+        .card {
+            height: 100%; /* Ensures all cards are of uniform height */
+            display: flex;
+            flex-direction: column; /* Ensures content stacks vertically */
+            justify-content: space-between; /* Ensures balanced spacing */
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            gap: 10px; /* Add spacing between elements inside the card */
+            padding: 20px; /* Adds padding inside the card */
+        }
+
+        .card-title {
+            margin-bottom: 15px; /* Adds space below the title */
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card ul {
+            list-style: none; /* Removes bullets from the list */
+            padding: 0; /* Removes default padding */
+            margin: 0; /* Removes default margin */
+        }
+
+        .card ul li {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Adds space between the logo and text */
+            padding: 10px 0; /* Adds padding between team items */
+        }
+
+        /* Title Banner */
+        .title-banner {
+            background-color: #013369; /* Slightly lighter blue shade */
+            color: white;
+            font-weight: bold; /* Ensures title stands out */
+            margin: 0; /* Removes default margin for clean styling */
+            padding: 10px 15px; /* Adjusted padding for even top and bottom spacing */
+            border-radius: 8px; /* Rounded corners for a sleek look */
+            margin-bottom: 25px; /* Adds space below the banner */
+            text-align: center;
+            width: 100%; /* Ensures the width matches the container behind */
+            box-sizing: border-box; /* Ensures padding doesn't affect the width */
+            display: flex; /* Enables flexbox for centering */
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+        }
+        
+        .title-banner h3 {
+            margin: 0; /* Removes default margin for clean styling */
+            font-size: 1.75rem; /* Larger font size for prominence */
+            
+        }
+
+        /* Conference Groups */
+        .conference-overview {
+            display: flex; /* Enables flexbox */
+            flex-direction: column; /* Stacks items vertically */
+            align-items: center; /* Horizontally centers items */
+            justify-content: center; /* Vertically centers items */
+            text-align: center; /* Ensures text is centered */
+        }
+        
+        .conference-list {
+            display: inline-block; /* Ensures the list does not stretch */
+            padding: 0; /* Removes extra padding from list */
+            margin: 0; /* Removes extra margin from list */
+        }
+        
+        .conference-item {
+            justify-content: center; /* Centers items in the flex row */
+            padding: 25px 250px; /* Adds spacing between items */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="header-content">
+            <h1 class="header-title">March Madness Predictor</h1>
+            <p class="header-subtitle">Your guide to the 2025 NCAA Tournament predictions</p>
+        </div>
+    </div>
+
+    <!-- Description and Date Conatiner -->
+    <div class="content-box">
+        <h3>About Us</h3>
+        <p><strong>Group:</strong> Arko Bhattacharya, Danish Maknojia, Vishesh Gupta, Nakiyah Dhariwala</p>
+        <p>Welcome to the March Madness Predictor! 
+            
+            As part of our IDS 706 - Data Engineering final project, this Flask-powered web app predicts the 2025 tournament seedings, identifies the Final Four contenders, and forecasts the champion.
+            
+            Explore team rankings, seed groups, and conferences with ease. Stay ahead of the game with the latest statistics and predictions for the tournament—let the madness begin!</p>
+
+            <p><strong>Last updated on:</strong> {{ last_updated }} (Eastern Time)</p>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="container content-container mt-4">
+        <div class="row text-center mb-4 subsection">
+        <!-- Rank Section -->
+        <div class="title-banner">
+            <h3>Top and Bottom Ranked Teams</h3>
+        </div>
+
+            <div class="col">
+                <h4>{{ first_team.TEAM1 }}</h4>
+                <img src="{{ first_team.logo }}" class="logoTeamRanked" alt="{{ first_team.TEAM1 }}">
+                <p>Rank: {{ first_team.rank }}</p>
+            </div>
+            <div class="col">
+                <h4>{{ second_to_last_team.TEAM1 }}</h4>
+                <img src="{{ second_to_last_team.logo }}" class="logoTeamRanked" alt="{{ second_to_last_team.TEAM1 }}">
+                <p>Rank: {{ second_to_last_team.rank }}</p>
+            </div>
+            <div class="col">
+                <h4>{{ last_team.TEAM1 }}</h4>
+                <img src="{{ last_team.logo }}" class="logoTeamRanked" alt="{{ last_team.TEAM1 }}">
+                <p>Rank: {{ last_team.rank }}</p>
+            </div>
+        </div>
+
+        <!-- Seed Groups -->
+        <div class="row mb-4 subsection">
+        <div class="title-banner">    
+            <h3>Seed Groups</h3>
+        </div>
+
+            <div class="row">
+                {% for seed, teams in grouped_seeds.items() %}
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Seed: {{ seed }}</h5>
+                                <ul class="list-unstyled">
+                                    {% for team in teams %}
+                                        <li>
+                                            <img src="{{ team.logo }}" class="logoTeam" alt="{{ team.name }}">
+                                            {{ team.name }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Conference List -->
+        <div class="conference-overview subsection">
+                <div class="title-banner">
+                    <h3>Conference Overview</h3>
+                </div>
+                <div class="conference-list">
+                <ul class="list-group">
+                    {% for conf, data in grouped_conferences.items() %}
+                        <li class="list-group-item d-flex align-items-center conference-item">
+                            <img src="{{ data.logo }}" class="logoConf me-3" alt="{{ conf }}">
+                            <div>
+                                <strong>{{ conf }}</strong>
+                                <span>({{ data.teams | length }} teams)</span>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="{{ url_for('final_four') }}" class="next-page-button">Predict Final Four</a>
+        </div>
+    </div>
+</body>
+</html>
