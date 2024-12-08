@@ -11,7 +11,7 @@ PORT ?= 8080
 # Target to run tests before proceeding with other tasks
 test:
 	@echo "Running tests..."
-	python3 -m pytest -vv --nbval --cov=. tests/test_*.py
+	python3 -m pytest -vv tests/test_*.py
 	@echo "Tests completed successfully!"
 
 lint:
