@@ -3707,3 +3707,102 @@
 2024-12-08 11:44:36,029 - INFO - 127.0.0.1 - - [08/Dec/2024 11:44:36] "GET /static/conferenceLogos/SC.png HTTP/1.1" 200 -
 2024-12-08 11:44:36,031 - INFO - 127.0.0.1 - - [08/Dec/2024 11:44:36] "GET /static/conferenceLogos/Sum.png HTTP/1.1" 200 -
 2024-12-08 11:44:36,212 - INFO - 127.0.0.1 - - [08/Dec/2024 11:44:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-08 22:57:57,972 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-08 22:57:57,972 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-08 22:57:57,977 - INFO - Data loaded and processed successfully.
+2024-12-08 22:57:57,977 - INFO - Predicting Final Four results.
+2024-12-08 22:57:57,978 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-08 22:57:57,978 - INFO - Starting Flask application.
+2024-12-08 22:57:57,988 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.202:8080
+2024-12-08 22:57:57,989 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 22:58:00,538 - INFO - Rendering index page.
+2024-12-08 22:58:00,665 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET / HTTP/1.1" 200 -
+2024-12-08 22:58:00,757 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Georgia.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,757 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Mount%20St.%20Mary's.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,759 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Kansas.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,760 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Alabama.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,764 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Auburn.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,765 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Tennessee.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,787 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Baylor.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,787 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Purdue.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,794 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Kentucky.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,794 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Marquette.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,798 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Memphis.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,801 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Gonzaga.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,805 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/St.%20John's.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,805 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Houston.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,810 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Duke.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,810 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/North%20Carolina.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,815 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Creighton.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,816 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Ohio%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,829 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Indiana.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,833 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/New%20Mexico.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,839 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/UCF.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,843 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Saint%20Mary's.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,853 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Iowa%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,857 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Texas%20A&M.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,859 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Houston%20Christian.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,861 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/images/bb2.jpeg HTTP/1.1" 200 -
+2024-12-08 22:58:00,866 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Mississippi%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,871 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Florida.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,884 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Arizona%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,885 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Texas%20Tech.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,888 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Michigan%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,893 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Iowa.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,897 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Wisconsin.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,904 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Oregon.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,908 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Illinois.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,923 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Rutgers.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,923 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/UMKC.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,927 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Michigan.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,930 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/San%20Diego%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,934 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Arkansas.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,943 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Cincinnati.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,947 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Wake%20Forest.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,948 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/UCLA.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,954 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Mississippi%20Valley%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,955 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Mississippi.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,955 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/LSU.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,958 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Connecticut.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,959 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/VCU.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,975 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Washington.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,975 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Pittsburgh.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,977 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/McNeese%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,982 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Texas.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,985 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Nebraska.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,987 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Kansas%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:00,993 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Virginia.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,993 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/Nevada.png HTTP/1.1" 200 -
+2024-12-08 22:58:00,997 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:00] "GET /static/logos/UMass%20Lowell.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,001 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Northwestern.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,007 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Boise%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:01,013 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Miami%20FL.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,015 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Florida%20A&M.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,015 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Saint%20Joseph's.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,018 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Clemson.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,018 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Wofford.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,349 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Washington%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:01,367 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Georgia%20St..png HTTP/1.1" 200 -
+2024-12-08 22:58:01,368 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Arizona.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,380 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Notre%20Dame.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,380 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/B10.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,380 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/SEC.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,380 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/logos/Queens.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,385 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/B12.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,390 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/ACC.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,394 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/MWC.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,394 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/BE.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,396 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/WCC.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,396 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/A10.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,402 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/SWAC.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,408 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/AE.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,410 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/Slnd.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,422 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/Amer.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,423 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/ASun.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,426 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/SB.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,427 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/MAAC.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,430 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/SC.png HTTP/1.1" 200 -
+2024-12-08 22:58:01,433 - INFO - 127.0.0.1 - - [08/Dec/2024 22:58:01] "GET /static/conferenceLogos/Sum.png HTTP/1.1" 200 -

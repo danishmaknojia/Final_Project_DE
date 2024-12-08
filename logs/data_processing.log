@@ -574,3 +574,345 @@
 2024-12-08 07:18:33,498 - INFO - Applying the model to current data.
 2024-12-08 07:18:33,500 - INFO - Assigning labels systematically.
 2024-12-08 07:18:33,501 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-08 22:55:10,606 - INFO - Found credentials in environment variables.
+2024-12-08 22:55:10,689 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:55:18,635 - INFO - Uploaded ../Final_Project_DE/archive/cbb13.csv to S3 as Final_Project_DE/archive/cbb13.csv.
+2024-12-08 22:55:20,374 - INFO - Uploaded ../Final_Project_DE/archive/cbb14.csv to S3 as Final_Project_DE/archive/cbb14.csv.
+2024-12-08 22:55:22,097 - INFO - Uploaded ../Final_Project_DE/archive/cbb15.csv to S3 as Final_Project_DE/archive/cbb15.csv.
+2024-12-08 22:55:24,130 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-08 22:55:26,130 - INFO - Uploaded ../Final_Project_DE/archive/cbb17.csv to S3 as Final_Project_DE/archive/cbb17.csv.
+2024-12-08 22:55:28,140 - INFO - Uploaded ../Final_Project_DE/archive/cbb19.csv to S3 as Final_Project_DE/archive/cbb19.csv.
+2024-12-08 22:55:29,875 - INFO - Uploaded ../Final_Project_DE/archive/cbb18.csv to S3 as Final_Project_DE/archive/cbb18.csv.
+2024-12-08 22:55:31,610 - INFO - Uploaded ../Final_Project_DE/archive/cbb21.csv to S3 as Final_Project_DE/archive/cbb21.csv.
+2024-12-08 22:55:33,610 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-08 22:55:36,854 - INFO - Found credentials in environment variables.
+2024-12-08 22:55:36,918 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:55:58,004 - INFO - Found credentials in environment variables.
+2024-12-08 22:55:58,074 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:56:01,734 - INFO - Found credentials in environment variables.
+2024-12-08 22:56:01,791 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:56:04,413 - INFO - Found credentials in environment variables.
+2024-12-08 22:56:04,470 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:56:05,930 - INFO - Found credentials in environment variables.
+2024-12-08 22:56:05,992 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:56:10,024 - INFO - Found credentials in environment variables.
+2024-12-08 22:56:10,081 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:56:17,151 - INFO - Uploaded ../Final_Project_DE/archive/cbb13.csv to S3 as Final_Project_DE/archive/cbb13.csv.
+2024-12-08 22:56:18,016 - INFO - Uploaded ../Final_Project_DE/archive/cbb14.csv to S3 as Final_Project_DE/archive/cbb14.csv.
+2024-12-08 22:56:18,886 - INFO - Uploaded ../Final_Project_DE/archive/cbb15.csv to S3 as Final_Project_DE/archive/cbb15.csv.
+2024-12-08 22:56:19,801 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-08 22:56:20,689 - INFO - Uploaded ../Final_Project_DE/archive/cbb17.csv to S3 as Final_Project_DE/archive/cbb17.csv.
+2024-12-08 22:56:21,287 - INFO - Uploaded ../Final_Project_DE/archive/cbb19.csv to S3 as Final_Project_DE/archive/cbb19.csv.
+2024-12-08 22:56:21,902 - INFO - Uploaded ../Final_Project_DE/archive/cbb18.csv to S3 as Final_Project_DE/archive/cbb18.csv.
+2024-12-08 22:56:22,482 - INFO - Uploaded ../Final_Project_DE/archive/cbb21.csv to S3 as Final_Project_DE/archive/cbb21.csv.
+2024-12-08 22:56:23,095 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-08 22:56:23,699 - INFO - Uploaded ../Final_Project_DE/archive/cbb23.csv to S3 as Final_Project_DE/archive/cbb23.csv.
+2024-12-08 22:56:24,313 - INFO - Uploaded ../Final_Project_DE/archive/cbb24.csv to S3 as Final_Project_DE/archive/cbb24.csv.
+2024-12-08 22:56:25,538 - INFO - Uploaded ../Final_Project_DE/archive/cbb.csv to S3 as Final_Project_DE/archive/cbb.csv.
+2024-12-08 22:56:25,539 - INFO - Processing cbb22.csv.
+2024-12-08 22:56:26,710 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-08 22:56:28,477 - INFO - Combining multiple CSV files.
+2024-12-08 22:56:34,356 - INFO - Processing cbb24.csv.
+2024-12-08 22:56:35,962 - INFO - Loading training and testing datasets.
+2024-12-08 22:56:36,850 - INFO - Filtering rows with non-null SEED values.
+2024-12-08 22:56:36,853 - INFO - Selected features: ['ADJOE', 'ADJDE', 'BARTHAG', 'EFG_O', 'EFG_D', 'TOR', 'TORD', 'ORB', 'DRB', 'FTR', 'FTRD', 'ADJ_T', 'WAB'].
+2024-12-08 22:56:36,855 - INFO - Splitting data into training and testing sets.
+2024-12-08 22:56:36,859 - INFO - Scaling features using StandardScaler.
+2024-12-08 22:56:36,865 - INFO - Fitting the GAM model.
+2024-12-08 22:56:37,602 - INFO - Predicting on test data.
+2024-12-08 22:56:47,711 - INFO - Predicting seeds for cbb24.
+2024-12-08 22:56:47,725 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-08 22:56:50,106 - INFO - Execute model on our current dataset i.e. current_cbb_live_data to get the seeds for 2024-2025 season
+2024-12-08 22:56:50,107 - INFO - Splitting data into training and testing sets.
+2024-12-08 22:56:50,109 - INFO - Scaling features using StandardScaler.
+2024-12-08 22:56:50,113 - INFO - Fitting the GAM model.
+2024-12-08 22:56:50,643 - INFO - Predicting on test data.
+2024-12-08 22:56:59,174 - INFO - Predicting seeds for cbb24.
+2024-12-08 22:56:59,189 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-08 22:57:00,370 - INFO - Run model to obtain predictions on who will be winning march madness for the 2024-25 season
+2024-12-08 22:57:00,376 - INFO - Training Random Forest Classifier.
+2024-12-08 22:57:00,508 - INFO - Evaluating model performance on the test set.
+2024-12-08 22:57:00,518 - INFO - Applying the model to current data.
+2024-12-08 22:57:00,522 - INFO - Assigning labels systematically.
+2024-12-08 22:57:00,523 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-08 22:57:01,370 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-08 22:57:01,371 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-08 22:57:01,385 - INFO - Data loaded and processed successfully.
+2024-12-08 22:57:01,385 - INFO - Predicting Final Four results.
+2024-12-08 22:57:01,385 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-08 22:57:01,387 - INFO - Starting Flask application.
+2024-12-08 22:57:01,398 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.202:8080
+2024-12-08 22:57:01,398 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 22:58:21,864 - INFO - Found credentials in environment variables.
+2024-12-08 22:58:21,940 - INFO - Extracting data from Bart Torvik.
+2024-12-08 22:58:29,728 - INFO - Uploaded ../Final_Project_DE/archive/cbb13.csv to S3 as Final_Project_DE/archive/cbb13.csv.
+2024-12-08 22:58:31,495 - INFO - Uploaded ../Final_Project_DE/archive/cbb14.csv to S3 as Final_Project_DE/archive/cbb14.csv.
+2024-12-08 22:58:32,702 - INFO - Uploaded ../Final_Project_DE/archive/cbb15.csv to S3 as Final_Project_DE/archive/cbb15.csv.
+2024-12-08 22:58:33,894 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-08 22:58:34,831 - INFO - Uploaded ../Final_Project_DE/archive/cbb17.csv to S3 as Final_Project_DE/archive/cbb17.csv.
+2024-12-08 22:58:35,740 - INFO - Uploaded ../Final_Project_DE/archive/cbb19.csv to S3 as Final_Project_DE/archive/cbb19.csv.
+2024-12-08 22:58:36,665 - INFO - Uploaded ../Final_Project_DE/archive/cbb18.csv to S3 as Final_Project_DE/archive/cbb18.csv.
+2024-12-08 22:58:37,283 - INFO - Uploaded ../Final_Project_DE/archive/cbb21.csv to S3 as Final_Project_DE/archive/cbb21.csv.
+2024-12-08 22:58:37,897 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-08 22:58:38,503 - INFO - Uploaded ../Final_Project_DE/archive/cbb23.csv to S3 as Final_Project_DE/archive/cbb23.csv.
+2024-12-08 22:58:39,145 - INFO - Uploaded ../Final_Project_DE/archive/cbb24.csv to S3 as Final_Project_DE/archive/cbb24.csv.
+2024-12-08 22:58:40,399 - INFO - Uploaded ../Final_Project_DE/archive/cbb.csv to S3 as Final_Project_DE/archive/cbb.csv.
+2024-12-08 22:58:40,399 - INFO - Processing cbb22.csv.
+2024-12-08 22:58:41,611 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-08 22:58:43,442 - INFO - Combining multiple CSV files.
+2024-12-08 22:58:49,268 - INFO - Processing cbb24.csv.
+2024-12-08 22:58:50,968 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-08 22:58:50,968 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-08 22:58:50,983 - INFO - Data loaded and processed successfully.
+2024-12-08 22:58:50,983 - INFO - Predicting Final Four results.
+2024-12-08 22:58:50,983 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-08 22:58:50,984 - INFO - Starting Flask application.
+2024-12-08 22:58:50,993 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.202:8080
+2024-12-08 22:58:50,993 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 23:00:32,526 - INFO - Found credentials in environment variables.
+2024-12-08 23:00:32,600 - INFO - Extracting data from Bart Torvik.
+2024-12-08 23:00:40,256 - INFO - Uploaded ../Final_Project_DE/archive/cbb13.csv to S3 as Final_Project_DE/archive/cbb13.csv.
+2024-12-08 23:00:41,966 - INFO - Uploaded ../Final_Project_DE/archive/cbb14.csv to S3 as Final_Project_DE/archive/cbb14.csv.
+2024-12-08 23:00:43,733 - INFO - Uploaded ../Final_Project_DE/archive/cbb15.csv to S3 as Final_Project_DE/archive/cbb15.csv.
+2024-12-08 23:00:45,755 - INFO - Uploaded ../Final_Project_DE/archive/cbb16.csv to S3 as Final_Project_DE/archive/cbb16.csv.
+2024-12-08 23:00:47,716 - INFO - Uploaded ../Final_Project_DE/archive/cbb17.csv to S3 as Final_Project_DE/archive/cbb17.csv.
+2024-12-08 23:00:49,655 - INFO - Uploaded ../Final_Project_DE/archive/cbb19.csv to S3 as Final_Project_DE/archive/cbb19.csv.
+2024-12-08 23:00:51,628 - INFO - Uploaded ../Final_Project_DE/archive/cbb18.csv to S3 as Final_Project_DE/archive/cbb18.csv.
+2024-12-08 23:00:53,598 - INFO - Uploaded ../Final_Project_DE/archive/cbb21.csv to S3 as Final_Project_DE/archive/cbb21.csv.
+2024-12-08 23:00:55,597 - INFO - Uploaded ../Final_Project_DE/archive/cbb22.csv to S3 as Final_Project_DE/archive/cbb22.csv.
+2024-12-08 23:00:57,586 - INFO - Uploaded ../Final_Project_DE/archive/cbb23.csv to S3 as Final_Project_DE/archive/cbb23.csv.
+2024-12-08 23:00:59,636 - INFO - Uploaded ../Final_Project_DE/archive/cbb24.csv to S3 as Final_Project_DE/archive/cbb24.csv.
+2024-12-08 23:01:06,300 - INFO - Uploaded ../Final_Project_DE/archive/cbb.csv to S3 as Final_Project_DE/archive/cbb.csv.
+2024-12-08 23:01:06,301 - INFO - Processing cbb22.csv.
+2024-12-08 23:01:08,341 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-08 23:01:10,153 - INFO - Combining multiple CSV files.
+2024-12-08 23:01:16,735 - INFO - Processing cbb24.csv.
+2024-12-08 23:01:18,680 - INFO - Loading training and testing datasets.
+2024-12-08 23:01:19,595 - INFO - Filtering rows with non-null SEED values.
+2024-12-08 23:01:19,598 - INFO - Selected features: ['ADJOE', 'ADJDE', 'BARTHAG', 'EFG_O', 'EFG_D', 'TOR', 'TORD', 'ORB', 'DRB', 'FTR', 'FTRD', 'ADJ_T', 'WAB'].
+2024-12-08 23:01:19,600 - INFO - Splitting data into training and testing sets.
+2024-12-08 23:01:19,604 - INFO - Scaling features using StandardScaler.
+2024-12-08 23:01:19,611 - INFO - Fitting the GAM model.
+2024-12-08 23:01:20,307 - INFO - Predicting on test data.
+2024-12-08 23:01:29,046 - INFO - Predicting seeds for cbb24.
+2024-12-08 23:01:29,056 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-08 23:01:30,244 - INFO - Execute model on our current dataset i.e. current_cbb_live_data to get the seeds for 2024-2025 season
+2024-12-08 23:01:30,245 - INFO - Splitting data into training and testing sets.
+2024-12-08 23:01:30,247 - INFO - Scaling features using StandardScaler.
+2024-12-08 23:01:30,250 - INFO - Fitting the GAM model.
+2024-12-08 23:01:30,788 - INFO - Predicting on test data.
+2024-12-08 23:01:39,185 - INFO - Predicting seeds for cbb24.
+2024-12-08 23:01:39,193 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-08 23:01:40,388 - INFO - Run model to obtain predictions on who will be winning march madness for the 2024-25 season
+2024-12-08 23:01:40,392 - INFO - Training Random Forest Classifier.
+2024-12-08 23:01:40,528 - INFO - Evaluating model performance on the test set.
+2024-12-08 23:01:40,537 - INFO - Applying the model to current data.
+2024-12-08 23:01:40,540 - INFO - Assigning labels systematically.
+2024-12-08 23:01:40,541 - INFO - Mapping assigned labels back to POSTSEASON names.
+2024-12-08 23:01:41,425 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-08 23:01:41,425 - INFO - Loading data from cbb25_seeded_20241122.csv
+2024-12-08 23:01:41,437 - INFO - Data loaded and processed successfully.
+2024-12-08 23:01:41,438 - INFO - Predicting Final Four results.
+2024-12-08 23:01:41,438 - INFO - Final Four prediction completed: {'final_four': ['Houston', 'Arizona', 'Auburn', 'Duke'], 'runner_up': 'Arizona', 'winner': 'Houston'}
+2024-12-08 23:01:41,440 - INFO - Starting Flask application.
+2024-12-08 23:01:41,449 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.202:8080
+2024-12-08 23:01:41,449 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-08 23:05:45,943 - INFO - Rendering Final Four page.
+2024-12-08 23:05:45,968 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:45] "GET /final_four HTTP/1.1" 200 -
+2024-12-08 23:05:45,997 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:45] "[36mGET /static/logos/Arizona.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:45,999 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:45] "[36mGET /static/logos/Duke.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:46,000 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:46] "[36mGET /static/images/bb2.jpeg HTTP/1.1[0m" 304 -
+2024-12-08 23:05:46,002 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:46] "[36mGET /static/logos/Houston.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:46,007 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:46] "[36mGET /static/logos/Auburn.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,085 - INFO - Rendering index page.
+2024-12-08 23:05:48,095 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "GET / HTTP/1.1" 200 -
+2024-12-08 23:05:48,112 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Alabama.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,113 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Mount%20St.%20Mary's.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,126 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Houston.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,129 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Arizona.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,130 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/AE.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,132 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/ASun.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,132 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Georgia.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,134 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/Amer.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,137 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/SB.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,141 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/MAAC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,142 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/images/bb2.jpeg HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,146 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/SC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,150 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/Sum.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,151 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Kansas.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,151 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Auburn.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,153 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Tennessee.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,154 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Purdue.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,154 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Baylor.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,156 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Marquette.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,156 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Kentucky.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,159 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Gonzaga.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,160 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/St.%20John's.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,160 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Duke.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,160 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Memphis.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,162 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/North%20Carolina.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,164 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Creighton.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,164 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Ohio%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,169 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Indiana.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,170 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/New%20Mexico.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,173 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/UCF.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,175 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Saint%20Mary's.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,176 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Iowa%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,178 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Texas%20A&M.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,179 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Houston%20Christian.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,181 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Mississippi%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,183 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Florida.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,185 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Arizona%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,189 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Michigan%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,193 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Iowa.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,195 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Texas%20Tech.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,199 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Wisconsin.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,201 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Oregon.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,202 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Illinois.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,205 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Rutgers.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,209 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Michigan.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,210 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/UMKC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,211 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/San%20Diego%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,213 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Arkansas.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,218 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Cincinnati.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,219 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/UCLA.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,219 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/LSU.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,221 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Wake%20Forest.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,222 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Mississippi.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,224 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Mississippi%20Valley%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,224 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/VCU.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,224 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Connecticut.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,237 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Washington.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,239 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Pittsburgh.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,241 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/McNeese%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,242 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Texas.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,243 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Kansas%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,244 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Nebraska.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,248 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Nevada.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,251 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/UMass%20Lowell.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,251 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Virginia.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,253 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Northwestern.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,253 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Boise%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,257 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Saint%20Joseph's.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,257 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Miami%20FL.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,257 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Florida%20A&M.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,258 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Wofford.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,259 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Clemson.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,261 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Washington%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,263 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Georgia%20St..png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,264 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Queens.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,265 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/logos/Notre%20Dame.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,542 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/BE.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,546 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/B10.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,550 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/MWC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,661 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/SEC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,666 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/ACC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,667 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/B12.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,669 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/WCC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,671 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/A10.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,674 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/SWAC.png HTTP/1.1[0m" 304 -
+2024-12-08 23:05:48,676 - INFO - 127.0.0.1 - - [08/Dec/2024 23:05:48] "[36mGET /static/conferenceLogos/Slnd.png HTTP/1.1[0m" 304 -
+2024-12-08 23:06:01,636 - INFO - Rendering index page.
+2024-12-08 23:06:01,641 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET / HTTP/1.1" 200 -
+2024-12-08 23:06:01,703 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Georgia.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,703 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Alabama.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,703 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Mount%20St.%20Mary's.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,703 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Kansas.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,706 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Auburn.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,706 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Tennessee.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,711 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Purdue.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,712 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Baylor.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,714 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Marquette.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,714 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Kentucky.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,716 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Gonzaga.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,717 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Memphis.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,718 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/St.%20John's.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,719 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Houston.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,719 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Duke.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,719 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/North%20Carolina.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,728 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Creighton.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,728 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Ohio%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,729 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/New%20Mexico.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,730 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Indiana.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,730 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Texas%20A&M.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,730 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/UCF.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,732 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Iowa%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,733 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Houston%20Christian.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,733 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Saint%20Mary's.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,737 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Mississippi%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,737 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Florida.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,738 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Arizona%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,738 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Texas%20Tech.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,739 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Michigan%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,742 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Iowa.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,743 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Wisconsin.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,745 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Oregon.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,745 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Illinois.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,747 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Rutgers.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,749 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/UMKC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,750 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Michigan.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,751 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/San%20Diego%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,752 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Arkansas.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,753 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/UCLA.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,753 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Cincinnati.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,755 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Wake%20Forest.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,756 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/LSU.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,756 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Mississippi%20Valley%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,757 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Mississippi.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,758 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/VCU.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,759 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Connecticut.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,760 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Pittsburgh.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,760 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Washington.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,761 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/McNeese%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,763 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Texas.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,763 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Nebraska.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,763 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Kansas%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,763 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Nevada.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,768 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Virginia.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,769 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/UMass%20Lowell.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,769 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Northwestern.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,769 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Miami%20FL.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,770 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Boise%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,770 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Florida%20A&M.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,773 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Wofford.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,774 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Saint%20Joseph's.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,775 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Clemson.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,776 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Arizona.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,777 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Washington%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,779 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Georgia%20St..png HTTP/1.1" 200 -
+2024-12-08 23:06:01,780 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Queens.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,781 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/logos/Notre%20Dame.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,785 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/B10.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,785 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/SEC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,787 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/images/bb2.jpeg HTTP/1.1" 200 -
+2024-12-08 23:06:01,788 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/B12.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,790 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/ACC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,791 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/BE.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,792 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/MWC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,798 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/WCC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,799 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/A10.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,799 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/SWAC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,803 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/Slnd.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,803 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/AE.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,805 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/ASun.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,808 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/Amer.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,809 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/MAAC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,810 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/SB.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,811 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/SC.png HTTP/1.1" 200 -
+2024-12-08 23:06:01,811 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:01] "GET /static/conferenceLogos/Sum.png HTTP/1.1" 200 -
+2024-12-08 23:06:05,970 - INFO - Rendering Final Four page.
+2024-12-08 23:06:05,981 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:05] "GET /final_four HTTP/1.1" 200 -
+2024-12-08 23:06:05,998 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:05] "[36mGET /static/logos/Houston.png HTTP/1.1[0m" 304 -
+2024-12-08 23:06:05,999 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:05] "[36mGET /static/logos/Arizona.png HTTP/1.1[0m" 304 -
+2024-12-08 23:06:06,000 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:06] "[36mGET /static/logos/Auburn.png HTTP/1.1[0m" 304 -
+2024-12-08 23:06:06,001 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:06] "[36mGET /static/logos/Duke.png HTTP/1.1[0m" 304 -
+2024-12-08 23:06:06,002 - INFO - 127.0.0.1 - - [08/Dec/2024 23:06:06] "[36mGET /static/images/bb2.jpeg HTTP/1.1[0m" 304 -

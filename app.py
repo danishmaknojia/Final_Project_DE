@@ -1,13 +1,19 @@
 from flask import Flask, render_template
-from functions import loadCSV, loadTeams, extractSeeds, extractFirstLastRanks, extractConferences
-from functions import finalFour, teamStats
+from mylib.functions import loadCSV, loadTeams, extractSeeds, extractFirstLastRanks, extractConferences
+from mylib.functions import finalFour, teamStats
 from datetime import datetime
 import pytz
 import os
 import logging
 
+
+
+        
 # Initialize the Flask application
 app = Flask(__name__)
+
+with open("read_write_files_s3.py") as f: exec(f.read())
+with open("final_model.py") as f: exec(f.read())
 
 # Configure logging
 logging.basicConfig(

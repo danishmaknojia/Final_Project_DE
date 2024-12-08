@@ -131,7 +131,7 @@ Together, these interconnected projects offer a comprehensive tool for predictin
 
 ### Architectural Diagram
 
-![Test Image ](diagram.png)
+![Test Image ](images/diagram.png)
 
 ### Purpose
 The microservices provide reusable Python functions for:
@@ -173,6 +173,9 @@ The microservices provide reusable Python functions for:
 
 ### Purpose
 This layer focuses on ingesting, cleaning, transforming, and preparing data for model training and prediction tasks.
+
+### Data flow
+![DEFinal](images/DEFinalDataFlow.jpeg)
 
 ### Key Steps
 
