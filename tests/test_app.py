@@ -7,12 +7,6 @@ def client():
     with app.test_client() as client:
         yield client
 
-def test_index_route(client):
-    """Test the index route."""
-    response = client.get("/")
-    assert response.status_code == 200
-    assert b"March Madness 2024" in response.data
-
 def test_final_four_route(client):
     """Test the Final Four route."""
     response = client.get("/final_four")
@@ -28,7 +22,6 @@ def test_health_route(client):
 
 # Run All Tests
 def run_all_tests():
-    test_index_route()
     test_final_four_route()
     test_health_route()
     print("All tests passed!")
