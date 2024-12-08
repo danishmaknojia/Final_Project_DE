@@ -446,3 +446,8 @@
 2024-12-07 15:43:26,176 - ERROR - Error reading test.csv from S3: No columns to parse from file
 2024-12-07 15:44:33,284 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
 2024-12-07 15:44:34,489 - INFO - Uploaded DataFrame to S3 as test.csv.
+2024-12-07 20:25:28,888 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-07 20:25:29,197 - INFO - Filtering rows with non-null SEED values.
+2024-12-07 20:25:29,200 - INFO - Selected features: ['feature1', 'feature2', 'feature3'].
+2024-12-07 20:25:29,204 - INFO - Updating seed assignments in the main DataFrame.
+2024-12-07 20:25:29,209 - INFO - Mapping assigned labels back to POSTSEASON names.

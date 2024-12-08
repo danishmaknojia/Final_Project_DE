@@ -1,5 +1,7 @@
 # NCAA Basketball Tournament Prediction Project
 
+[![Run Data Processing Script](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/CICD.yml/badge.svg)](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/CICD.yml)
+
 ## Algorithmic Approach
 
 This repository contains two interconnected projects focused on predicting NCAA basketball tournament outcomes:
@@ -127,6 +129,10 @@ Together, these interconnected projects offer a comprehensive tool for predictin
 
 ## **Microservice**
 
+### Architectural Diagram
+
+![Test Image ](diagram.png)
+
 ### Purpose
 The microservices provide reusable Python functions for:
 - Data preprocessing and splitting.
@@ -246,7 +252,7 @@ The pipeline is automated on every push using the following steps:
 ---
 
 # TODO
-(architectural diagram)
+
 ## **Load Test and Quantitative analysis**
 
 ---
