@@ -26,8 +26,8 @@ jobs:
         pip install -r requirements.txt
         
     # Step 3: Run lint
-#    - name: lint
-#      run: make lint
+    - name: lint
+      run: make lint
 
     # Step 4: Run tests
     - name: Run tests
