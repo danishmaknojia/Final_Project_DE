@@ -4,6 +4,9 @@
 
 [![Run Data Processing Script](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/data_pipeline.yml/badge.svg)](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/data_pipeline.yml)
 
+## Youtube Video
+[click here](https://youtu.be/viAeG9t9qAU?si=DZ7B4uvm4PkOSFAm)
+
 ## Algorithmic Approach
 
 This repository contains two interconnected projects focused on predicting NCAA basketball tournament outcomes:
