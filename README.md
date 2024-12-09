@@ -87,14 +87,15 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - **Overall Top Seed:** The team projected to be the No. 1 overall seed for the tournament.
   - **Teams on the Edge:** A list of teams currently just scrpaing through to make it to March Madness.
 
-( Nakiyah Please Add Photo )
+![Ranks](Rankedteams.png)
 
 ### **Seed Projections**
 - Scrolling down reveals the **projected seedings** for every team in the tournament:
   - Seeds **1 through 10**: Each seed is assigned four teams.
   - Seeds **11 and 16**: These have **six teams** each, accounting for play-in games.
 
-( Nakiyah Please Add Photo )
+![Seed1To8](Seed1To8.png)
+![Seed9To16](Seed9To16.png)
 
 ### **League Representation**
 - Further down, you'll find a **league breakdown**, displaying how many teams are projected to make the tournament from each conference, including:
@@ -103,7 +104,7 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - ACC
   - And more...
 
-( Nakiyah Please Add Photo )
+![Conf](ConfOverview.png)
 
 
 ### **Prediction Page**
@@ -111,7 +112,7 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - **Final Four Teams**: See which four teams are projected to reach the Final Four.
   - **Runner-Up and Champion**: View predictions for the runner-up and the tournament champion.
 
-( Nakiyah Please Add Photo )
+![FinalFour](Final.png)
 
 ### **Team Statistics**
 - Hover over any of the Final Four teams to reveal detailed statistics about their playstyle, including:
@@ -123,7 +124,7 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - **DRB (Defensive Rebound Rate)**: Success at securing defensive rebounds.
   - And more...
 
-( Nakiyah Please Add Photo )
+![DukeStats](DukeStats.png)
 
 ---
 
