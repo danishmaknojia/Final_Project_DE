@@ -1,6 +1,9 @@
 import pandas as pd
 from datetime import datetime
 import os
+import boto3
+
+from lib import read_s3_csv
 
 def findTeamLogo(teamName):
     """
@@ -171,13 +174,15 @@ def teamStats(dataframe, topFour):
     return teamsDict
 
 
-# # TESTING
-# data = loadCSV("cbb25_seeded_20241122.csv")
-# teams = loadTeams(data)
-# dictionatyitem = finalFour(teams)
-# stats = teamStats(data, dictionatyitem)
 
+# TESTING
+s3 = boto3.client("s3")
+bucket_name = "cbb-data-engg"
+input_prefix = "Final_Project_DE/archive/"
+output_prefix = "Final_Project_DE/"
 current_date = datetime.now().strftime("%Y%m%d")
 file_name_final = f"cbb25_seeded_{current_date}.csv"
-#current_data_seeded.to_csv(file_name, index=False)
-write_s3_csv(current_data_seeded, bucket_name, f"{output_prefix}{file_name_final}")
+data = read_s3_csv(bucket_name, f"{output_prefix}{file_name_final}")
+teams = loadTeams(data)
+dictionatyitem = finalFour(teams)
+stats = teamStats(data, dictionatyitem)

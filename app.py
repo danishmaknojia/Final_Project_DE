@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 from mylib.functions import loadCSV, loadTeams, extractSeeds, extractFirstLastRanks, extractConferences
 from mylib.functions import finalFour, teamStats
+from mylib.lib import read_s3_csv
+import boto3
 from datetime import datetime
 import pytz
 import os
@@ -9,10 +11,10 @@ import logging
 # Initialize the Flask application
 app = Flask(__name__)
 
-with open("read_write_files_s3.py") as f: 
-    exec(f.read())
-with open("final_model.py") as f: 
-    exec(f.read())
+# with open("read_write_files_s3.py") as f: 
+#     exec(f.read())
+# with open("final_model.py") as f: 
+#     exec(f.read())
 
 # Configure logging
 logging.basicConfig(
@@ -27,14 +29,16 @@ logging.basicConfig(
 # Log app start
 logging.info("Initializing March Madness Predictor Flask application.")
 
-# Load and process data
-filePath = "cbb25_seeded_20241122.csv"
-if not os.path.exists(filePath):
-    logging.error(f"Data file not found: {filePath}")
-    raise FileNotFoundError(f"Data file not found: {filePath}")
+# S3 Configuration
+s3 = boto3.client("s3")
+bucket_name = "cbb-data-engg"
+output_prefix = "Final_Project_DE/"
+current_date = datetime.now().strftime("%Y%m%d")
+file_name_final = f"cbb25_seeded_{current_date}.csv"
 
-logging.info(f"Loading data from {filePath}")
-df = loadCSV(filePath)
+logging.info(f"Loading data from {df}")
+df = read_s3_csv(bucket_name, f"{output_prefix}{file_name_final}")
+logging.info("Processing teams data with loadTeams.")
 dfClean = loadTeams(df)
 dfGroupSeed = extractSeeds(dfClean)
 dfFirstLastRanks = extractFirstLastRanks(dfClean)
