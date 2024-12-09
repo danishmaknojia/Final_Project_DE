@@ -17,6 +17,10 @@ test:
 lint:
 	ruff check *.py mylib/*.py
 
+etl:
+	python extract.py
+	python read_write_files_s3.py
+
 # Build the Docker image
 build:
 	docker build -t $(IMAGE_NAME_LOCAL):latest .
