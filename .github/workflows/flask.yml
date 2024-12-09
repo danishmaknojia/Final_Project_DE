@@ -32,6 +32,10 @@ jobs:
     # Step 4: Run tests
     - name: Run tests
       run: make test  # Assuming `make tests` runs your test suite
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: us-east-1
 
     # Step 5: Log in to Amazon ECR
     - name: Log in to Amazon ECR
