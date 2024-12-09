@@ -19,11 +19,6 @@ logging.basicConfig(
     ]
 )
 
-with open("read_write_files_s3.py") as f: 
-    exec(f.read())
-with open("final_model.py") as f: 
-    exec(f.read())
-
 # Log app initialization
 logging.info("Initializing March Madness Predictor Flask application.")
 
@@ -35,17 +30,17 @@ current_date = datetime.now().strftime("%Y%m%d")
 file_name_final = f"cbb25_seeded_{current_date}.csv"
 
 # Helper function to load and process data
-def load_and_process_data():
+def load_and_process_data(flag=True):
     """
     Fetches data from S3 and processes it for analysis.
     Returns processed dataframes and other relevant results.
     """
     try:
-
-        with open("read_write_files_s3.py") as f: 
-            exec(f.read())
-        with open("final_model.py") as f: 
-            exec(f.read())
+        if flag:
+            with open("read_write_files_s3.py") as f: 
+                exec(f.read())
+            with open("final_model.py") as f: 
+                exec(f.read())
         logging.info(f"Loading data from S3: {output_prefix}{file_name_final}")
         df = read_s3_csv(bucket_name, f"{output_prefix}{file_name_final}")
         
@@ -102,7 +97,7 @@ def final_four_route():
     """
     try:
         # Load and process data
-        df, dfClean, _, _, _ = load_and_process_data()
+        df, dfClean, _, _, _ = load_and_process_data(False)
 
         # Predict Final Four results
         logging.info("Predicting Final Four results.")
