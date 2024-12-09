@@ -41,6 +41,11 @@ def load_and_process_data():
     Returns processed dataframes and other relevant results.
     """
     try:
+
+        with open("read_write_files_s3.py") as f: 
+            exec(f.read())
+        with open("final_model.py") as f: 
+            exec(f.read())
         logging.info(f"Loading data from S3: {output_prefix}{file_name_final}")
         df = read_s3_csv(bucket_name, f"{output_prefix}{file_name_final}")
         
