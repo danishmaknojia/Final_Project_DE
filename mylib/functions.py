@@ -42,7 +42,6 @@ def loadTeams(df):
     
     # Extracting relevant columns
     dfClean = df[["TEAM1", "CONF", "predicted_seed_score", "rank", "predicted_seed_with_update", "predicted_postseason_label", "predicted_postseason_description"]]
-    print(dfClean)
     return dfClean
 
 def extractSeeds(data):
