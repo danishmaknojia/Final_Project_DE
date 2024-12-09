@@ -31,7 +31,7 @@ jobs:
 
     # Step 4: Run tests
     - name: Run tests
-      run: make tests  # Assuming `make tests` runs your test suite
+      run: make test  # Assuming `make tests` runs your test suite
 
     # Step 5: Log in to Amazon ECR
     - name: Log in to Amazon ECR
