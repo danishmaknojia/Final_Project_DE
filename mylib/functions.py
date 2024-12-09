@@ -109,9 +109,7 @@ def finalFour(data):
     topFourDict = { "final_four": topFour["TEAM1"].tolist(), 
                    "runner_up": topFour["TEAM1"].iloc[1], 
                    "winner": topFour["TEAM1"].iloc[0] }
-    
-    print(topFourDict)
-    
+        
     return topFourDict  # This should return a dictionary
     
 def teamStats(dataframe, topFour):

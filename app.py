@@ -19,10 +19,10 @@ logging.basicConfig(
     ]
 )
 
-# with open("read_write_files_s3.py") as f: 
-#     exec(f.read())
-# with open("final_model.py") as f: 
-#     exec(f.read())
+with open("read_write_files_s3.py") as f: 
+    exec(f.read())
+with open("final_model.py") as f: 
+    exec(f.read())
 
 # Log app initialization
 logging.info("Initializing March Madness Predictor Flask application.")
