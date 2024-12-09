@@ -302,7 +302,3 @@ The application successfully handled a concurrent load of 10,000 users without a
 In summary the application handles up to 130 RPS with 10,000 users while maintaining low failure rates. This suggests good scalability for this level of concurrency. We also see that the failure rates is staying close to zero, which indicates that the system demonstrates reliability in handling the simulated load.
 
 ---
-
-## **Instructions around cloning and rerunning**
-
----
