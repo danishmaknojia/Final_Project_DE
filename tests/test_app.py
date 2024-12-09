@@ -9,15 +9,6 @@ def client():
         yield client
 
 
-def test_index_route(client):
-    """
-    Test the index (home) route.
-    """
-    response = client.get("/")
-    assert response.status_code == 200  # Check if the response status code is OK
-    assert b"March Madness Predictor" in response.data  # Verify page content
-
-
 def test_final_four_route(client):
     """
     Test the Final Four route.

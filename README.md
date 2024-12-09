@@ -1,6 +1,8 @@
 # NCAA Basketball Tournament Prediction Project 
 
-[![Run Data Processing Script](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/CICD.yml/badge.svg)](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/CICD.yml)
+[![Build, Test, and Push Docker Image to ECR](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/flask.yml/badge.svg)](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/flask.yml)
+
+[![Run Data Processing Script](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/data_pipeline.yml/badge.svg)](https://github.com/danishmaknojia/Final_Project_DE/actions/workflows/data_pipeline.yml)
 
 ## Algorithmic Approach
 
@@ -87,15 +89,15 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - **Overall Top Seed:** The team projected to be the No. 1 overall seed for the tournament.
   - **Teams on the Edge:** A list of teams currently just scrpaing through to make it to March Madness.
 
-![Ranks](Rankedteams.png)
+![Ranks](images/Rankedteams.png)
 
 ### **Seed Projections**
 - Scrolling down reveals the **projected seedings** for every team in the tournament:
   - Seeds **1 through 10**: Each seed is assigned four teams.
   - Seeds **11 and 16**: These have **six teams** each, accounting for play-in games.
 
-![Seed1To8](Seed1To8.png)
-![Seed9To16](Seed9To16.png)
+![Seed1To8](images/Seed1To8.png)
+![Seed9To16](images/Seed9To16.png)
 
 ### **League Representation**
 - Further down, you'll find a **league breakdown**, displaying how many teams are projected to make the tournament from each conference, including:
@@ -104,7 +106,7 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - ACC
   - And more...
 
-![Conf](ConfOverview.png)
+![Conf](images/ConfOverview.png)
 
 
 ### **Prediction Page**
@@ -112,7 +114,7 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - **Final Four Teams**: See which four teams are projected to reach the Final Four.
   - **Runner-Up and Champion**: View predictions for the runner-up and the tournament champion.
 
-![FinalFour](Final.png)
+![FinalFour](images/Final.png)
 
 ### **Team Statistics**
 - Hover over any of the Final Four teams to reveal detailed statistics about their playstyle, including:
@@ -124,7 +126,7 @@ Together, these interconnected projects offer a comprehensive tool for predictin
   - **DRB (Defensive Rebound Rate)**: Success at securing defensive rebounds.
   - And more...
 
-![DukeStats](DukeStats.png)
+![DukeStats](images/DukeStats.png)
 
 ---
 
@@ -257,9 +259,9 @@ The pipeline is automated on every push using the following steps:
 
 # TODO
 
-## **Load Test and Quantitative analysis**
+## **Load Test**
 
----
+![Locust](images/Locust.png)
 
 ## **Instructions around cloning and rerunning**
 
