@@ -1,0 +1,21 @@
+2024-12-09 03:46:36,543 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-09 03:46:36,664 - INFO - Extracting and saving current live data.
+2024-12-09 03:46:36,664 - INFO - Extracting data from Bart Torvik.
+2024-12-09 03:46:40,512 - INFO - Processing cbb22.csv.
+2024-12-09 03:46:41,129 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-09 03:46:42,425 - INFO - Combining multiple CSV files.
+2024-12-09 03:46:52,446 - INFO - Processing cbb24.csv.
+2024-12-09 04:05:43,724 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-09 04:05:43,937 - INFO - Extracting and saving current live data.
+2024-12-09 04:05:43,937 - INFO - Extracting data from Bart Torvik.
+2024-12-09 04:05:51,305 - INFO - Processing cbb22.csv.
+2024-12-09 04:05:55,130 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-09 04:05:58,184 - INFO - Combining multiple CSV files.
+2024-12-09 04:06:09,162 - INFO - Processing cbb24.csv.
+2024-12-09 04:06:20,354 - INFO - Loading training and testing datasets.
+2024-12-09 04:06:30,468 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-09 04:06:30,572 - INFO - Extracting and saving current live data.
+2024-12-09 04:06:30,572 - INFO - Extracting data from Bart Torvik.
+2024-12-09 04:06:39,582 - INFO - Processing cbb22.csv.
+2024-12-09 04:06:41,925 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-09 04:06:44,505 - INFO - Combining multiple CSV files.

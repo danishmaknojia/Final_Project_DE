@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 
 
 logging.basicConfig(
-    filename='data_processing.log',
+    filename='logs/lib.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )

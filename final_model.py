@@ -5,7 +5,7 @@ from mylib.lib import data_split_to_feature_outcome, model_execution, rank_teams
 import boto3
 
 logging.basicConfig(
-    filename='data_processing.log',
+    filename='logs/final_model.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
