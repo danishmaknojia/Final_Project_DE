@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/visheshgupta/Desktop/Final_Project_DE'
+echo "Running tests..."
+python3 -m pytest -vv tests/test_*.py
+echo "Tests completed successfully!"
+make: Leaving directory `/Users/visheshgupta/Desktop/Final_Project_DE'
+ 
