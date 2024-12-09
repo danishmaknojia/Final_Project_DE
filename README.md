@@ -257,16 +257,52 @@ The pipeline is automated on every push using the following steps:
 
 ---
 
-# TODO
-
-## **Load Test**
+## **Load Test and Quantitative Analysis**
 
 ![Locust](images/Locust.png)
 
-## **Instructions around cloning and rerunning**
+## Total Requests Per Second (RPS)
+
+### Metrics
+- **Peak RPS**: 130.5 requests per second
+- **Failures per Second**: 0.2 failures per second (maximum observed)
+
+#### Observations
+- The RPS increased steadily throughout the test, reaching a maximum value of 130.5.
+- Failure rates remained consistently low, with a maximum of 0.2 failures per second.
+
+#### Implication
+The system processed over 130 requests per second with a failure rate of less than 0.2%, indicating strong reliability under the simulated load.
+
+### Response Times (ms)
+
+#### Metrics
+- **50th Percentile Response Time**: 8,100 ms (median)
+- **95th Percentile Response Time**: 15,000 ms (slowest 5% of requests)
+
+#### Observations
+- The majority of requests were completed within 8,100 ms.
+- A small percentage of requests (5%) experienced delays, with response times reaching 15,000 ms.
+
+#### Implication
+While the median response time was acceptable, higher percentiles indicate variability in response times under load.
+
+### Number of Users
+
+#### Metrics
+- **Maximum Number of Simulated Users**: 10,000 users
+
+#### Observations
+- The user count increased steadily, reaching the target of 10,000 concurrent users.
+- The system maintained stable performance as the user load grew.
+
+#### Implication
+The application successfully handled a concurrent load of 10,000 users without a significant impact on failure rates.
+
+In summary the application handles up to 130 RPS with 10,000 users while maintaining low failure rates. This suggests good scalability for this level of concurrency. We also see that the failure rates is staying close to zero, which indicates that the system demonstrates reliability in handling the simulated load.
 
 ---
 
-## **File Structure**
+## **Instructions around cloning and rerunning**
 
 ---
