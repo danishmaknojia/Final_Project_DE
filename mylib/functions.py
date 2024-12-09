@@ -1,7 +1,4 @@
-import pandas as pd
-from datetime import datetime
 import os
-import boto3
 
 def findTeamLogo(teamName):
     """
@@ -103,21 +100,6 @@ def extractConferences(data):
     return sortedConfCounts
 
 ## PAGE 2
-# def finalFour(data):
-#     """
-#     Extracts the predicted final four teams
-#     """
-#     sortByPredictedWinner = data.sort_values(by='predicted_postseason_label', ascending=True)
-#     topFour = sortByPredictedWinner.head(4)
-
-#     topFourDict = { "final_four": topFour["TEAM1"].tolist(), 
-#                    "runner_up": topFour["TEAM1"].iloc[1], 
-#                    "winner": topFour["TEAM1"].iloc[0] 
-#                    }
-    
-#     return topFourDict
-    
-    
 def finalFour(data):
     """
     Extracts the predicted final four teams
@@ -133,54 +115,6 @@ def finalFour(data):
     
     return topFourDict  # This should return a dictionary
     
-# # Stats for each team
-# def teamStats(dataframe, topFour):
-    
-#     top4teams = list(topFour['final_four']) 
-            
-#     # Filter the dataframe for rows with these team names in the 'TEAM1' column
-#     teamList = dataframe[dataframe['TEAM1'].isin(top4teams)]
-#     teamColumns = ["TEAM1", "CONF", 
-#                    "G", 
-#                    "ADJOE", "ADJDE", 
-#                    "BARTHAG", 
-#                    "EFG_O", "EFG_D", 
-#                    "TOR", "TORD", 
-#                    "ORB", "DRB", 
-#                    "FTR", "FTRD"] 
-#                 #    "2P_O", "2P_D", 
-#                 #    "3P_O", "3P_D", 
-#                 #    "ADJ_T", "WAB", 
-#                 #    "predicted_postseason_description"]
-    
-#     cleanedTeams = teamList[teamColumns]
-    
-#     # Define the mapping
-#     column_mapping = {
-#         "TEAM1": "Team",
-#         "CONF": "Conference",
-#         "G": "Number of Games Played",
-#         "ADJOE": "Adjusted Offensive Efficiency",
-#         # ADJOE: (An estimate of the offensive efficiency a team would have against the average Division I defense)
-#         "ADJDE": "Adjusted Defensive Efficiency",
-#         # ADJDE:  (An estimate of the defensive efficiency a team would have against the average Division I offense)
-#         "BARTHAG": "Power Rating (Chance of beating an average Division I team)",
-#         "EFG_O": "Effective Field Goal Percentage Shot",
-#         "EFG_D": "Effective Field Goal Percentage Allowed",
-#         "TOR": "Turnover Rate",
-#         "TORD": "Steal Rate",
-#         "ORB": "Offensive Rebound Rate",
-#         "DRB": "Offensive Rebound Rate Allowed",
-#         "FTR": "Free Throw Rate", # (How often the given team shoots Free Throws)
-#         "FTRD": "Free Throw Rate Allowed"
-#     }
-    
-#     # Rename the columns
-#     renamedColumnTeams = cleanedTeams.rename(columns=column_mapping, inplace=False)
-#     teamsDict = renamedColumnTeams.to_dict(orient="records")
-    
-#     return teamsDict
-
 def teamStats(dataframe, topFour):
     top4teams = list(topFour['final_four'])  # Access the dictionary key 'final_four' correctly.
             
@@ -193,11 +127,7 @@ def teamStats(dataframe, topFour):
                    "EFG_O", "EFG_D", 
                    "TOR", "TORD", 
                    "ORB", "DRB", 
-                   "FTR", "FTRD"] 
-                #    "2P_O", "2P_D", 
-                #    "3P_O", "3P_D", 
-                #    "ADJ_T", "WAB", 
-                #    "predicted_postseason_description"]
+                   "FTR", "FTRD"]
     
     cleanedTeams = teamList[teamColumns]
     
@@ -230,6 +160,8 @@ def teamStats(dataframe, topFour):
 
 # TESTING
 # from lib import read_s3_csv
+# import boto3
+# from datetime import datetime
 # s3 = boto3.client("s3")
 # bucket_name = "cbb-data-engg"
 # output_prefix = "Final_Project_DE/"
