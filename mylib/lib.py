@@ -12,8 +12,6 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-
-
 logging.basicConfig(
     filename='logs/lib.log',
     level=logging.INFO,
