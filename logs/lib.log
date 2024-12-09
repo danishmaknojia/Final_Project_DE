@@ -1,0 +1,158 @@
+2024-12-09 17:08:10,329 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-09 17:08:10,417 - INFO - Initializing March Madness Predictor Flask application.
+2024-12-09 17:08:10,419 - INFO - Starting Flask application.
+2024-12-09 17:08:10,429 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.202:8080
+2024-12-09 17:08:10,429 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-09 17:10:41,550 - INFO - Loading data from S3: Final_Project_DE/cbb25_seeded_20241209.csv
+2024-12-09 17:10:43,378 - INFO - Data loaded and processed successfully.
+2024-12-09 17:10:43,378 - INFO - Rendering index page.
+2024-12-09 17:10:43,386 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "GET / HTTP/1.1" 200 -
+2024-12-09 17:10:43,418 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[33mGET /static/logos/placeholder.png HTTP/1.1[0m" 404 -
+2024-12-09 17:10:43,423 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Marquette.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,430 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Wake%20Forest.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,432 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Auburn.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,433 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Alabama.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,434 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Oregon.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,435 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Duke.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,435 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Kentucky.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,436 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Purdue.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,437 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Gonzaga.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,437 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Iowa%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,438 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Kansas.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,439 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Tennessee.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,440 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Florida.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,441 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Clemson.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,441 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Pittsburgh.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,442 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Houston.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,443 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Michigan.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,444 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Michigan%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,447 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Memphis.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,449 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/images/bb2.jpeg HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,449 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Mississippi%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,453 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Wisconsin.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,457 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Mississippi.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,458 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Texas%20A&M.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,460 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/North%20Carolina.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,461 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/UCLA.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,462 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/St.%20John's.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,463 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Saint%20Mary's.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,464 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Indiana.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,467 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Arizona%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,468 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Texas%20Tech.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,470 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Illinois.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,470 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Baylor.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,471 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Iowa.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,471 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Cincinnati.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,473 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Washington%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,473 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Nebraska.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,475 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/San%20Diego%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,475 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Texas.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,475 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Dayton.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,478 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Georgia.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,478 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Ohio%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,479 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Creighton.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,483 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Arizona.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,483 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Northwestern.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,483 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Connecticut.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,487 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Arkansas.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,488 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/LSU.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,488 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Virginia.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,488 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/Rutgers.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,492 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/BYU.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,493 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/VCU.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,493 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/UCF.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,493 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/logos/New%20Mexico.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,494 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/B10.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,497 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/SEC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,497 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/B12.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,497 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/ACC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,500 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/BE.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,501 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/WCC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,506 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/Amer.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,507 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[33mGET /static/conferenceLogos/placeholder.png HTTP/1.1[0m" 404 -
+2024-12-09 17:10:43,507 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/MWC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:43,507 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[33mGET /static/logos/placeholder.png HTTP/1.1[0m" 404 -
+2024-12-09 17:10:43,508 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:43] "[36mGET /static/conferenceLogos/A10.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:57,084 - INFO - Loading data from S3: Final_Project_DE/cbb25_seeded_20241209.csv
+2024-12-09 17:10:58,103 - INFO - Data loaded and processed successfully.
+2024-12-09 17:10:58,103 - INFO - Predicting Final Four results.
+2024-12-09 17:10:58,103 - INFO - Final Four prediction completed: {'final_four': ['Auburn', 'Gonzaga', 'Houston', 'Duke'], 'runner_up': 'Gonzaga', 'winner': 'Auburn'}
+2024-12-09 17:10:58,107 - INFO - Rendering Final Four page.
+2024-12-09 17:10:58,112 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:58] "GET /final_four HTTP/1.1" 200 -
+2024-12-09 17:10:58,148 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:58] "[36mGET /static/logos/Auburn.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:58,149 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:58] "[36mGET /static/logos/Houston.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:58,150 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:58] "[36mGET /static/logos/Gonzaga.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:58,151 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:58] "[36mGET /static/logos/Duke.png HTTP/1.1[0m" 304 -
+2024-12-09 17:10:58,152 - INFO - 127.0.0.1 - - [09/Dec/2024 17:10:58] "[36mGET /static/images/bb2.jpeg HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,224 - INFO - Loading data from S3: Final_Project_DE/cbb25_seeded_20241209.csv
+2024-12-09 17:11:03,612 - INFO - Data loaded and processed successfully.
+2024-12-09 17:11:03,612 - INFO - Rendering index page.
+2024-12-09 17:11:03,613 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "GET / HTTP/1.1" 200 -
+2024-12-09 17:11:03,644 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[33mGET /static/logos/placeholder.png HTTP/1.1[0m" 404 -
+2024-12-09 17:11:03,646 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Marquette.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,647 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Wake%20Forest.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,649 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Auburn.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,651 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Alabama.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,651 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Gonzaga.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,653 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Oregon.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,653 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Purdue.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,655 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Duke.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,656 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Kentucky.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,657 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Kansas.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,657 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Iowa%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,658 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Tennessee.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,659 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Clemson.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,660 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Florida.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,661 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Pittsburgh.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,661 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Houston.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,662 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Michigan.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,662 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Michigan%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,663 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Memphis.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,664 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Wisconsin.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,664 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Mississippi%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,665 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Texas%20A&M.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,665 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Mississippi.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,666 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/North%20Carolina.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,667 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/UCLA.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,668 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Indiana.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,669 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Saint%20Mary's.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,670 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Arizona%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,670 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/St.%20John's.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,671 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Texas%20Tech.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,674 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Baylor.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,675 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Illinois.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,676 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Iowa.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,677 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Cincinnati.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,678 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Nebraska.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,678 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Washington%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,679 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/San%20Diego%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,679 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Texas.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,680 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Dayton.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,681 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Georgia.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,681 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Ohio%20St..png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,682 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Creighton.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,682 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Connecticut.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,683 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Arizona.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,684 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Northwestern.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,684 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Arkansas.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,685 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/LSU.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,686 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Virginia.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,686 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/VCU.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,686 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/Rutgers.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,687 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/New%20Mexico.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,688 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/BYU.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,689 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/SEC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,689 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/B10.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,689 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/logos/UCF.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,690 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/B12.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,691 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/BE.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,691 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/ACC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,692 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/WCC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,692 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/Amer.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,693 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/MWC.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,693 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[33mGET /static/conferenceLogos/placeholder.png HTTP/1.1[0m" 404 -
+2024-12-09 17:11:03,694 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/conferenceLogos/A10.png HTTP/1.1[0m" 304 -
+2024-12-09 17:11:03,694 - INFO - 127.0.0.1 - - [09/Dec/2024 17:11:03] "[36mGET /static/images/bb2.jpeg HTTP/1.1[0m" 304 -
