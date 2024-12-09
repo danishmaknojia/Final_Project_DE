@@ -1542,3 +1542,10 @@
 2024-12-09 16:18:56,051 - INFO - 127.0.0.1 - - [09/Dec/2024 16:18:56] "[36mGET /static/conferenceLogos/A10.png HTTP/1.1[0m" 304 -
 2024-12-09 16:18:56,052 - INFO - 127.0.0.1 - - [09/Dec/2024 16:18:56] "[33mGET /static/conferenceLogos/placeholder.png HTTP/1.1[0m" 404 -
 2024-12-09 16:18:56,052 - INFO - 127.0.0.1 - - [09/Dec/2024 16:18:56] "[36mGET /static/images/bb2.jpeg HTTP/1.1[0m" 304 -
+2024-12-09 05:54:26,894 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-12-09 05:54:27,009 - INFO - Extracting and saving current live data.
+2024-12-09 05:54:27,009 - INFO - Extracting data from Bart Torvik.
+2024-12-09 05:54:33,016 - INFO - Processing cbb22.csv.
+2024-12-09 05:54:35,221 - INFO - Processing cbb16.csv and cbb.csv.
+2024-12-09 05:54:39,084 - INFO - Combining multiple CSV files.
+2024-12-09 05:54:55,940 - INFO - Processing cbb24.csv.
