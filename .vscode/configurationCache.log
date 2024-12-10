@@ -1,0 +1,1 @@
+{"buildTargets":["build","clean","container_show","etl","image_show","lint","login","push","push_docker_hub","run","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
