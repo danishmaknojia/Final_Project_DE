@@ -7,6 +7,9 @@
 ## Youtube Video
 [click here](https://youtu.be/viAeG9t9qAU?si=DZ7B4uvm4PkOSFAm)
 
+## Web App
+[Webapp](https://ivsi3tcy2v.us-east-1.awsapprunner.com )
+
 ## Algorithmic Approach
 
 This repository contains two interconnected projects focused on predicting NCAA basketball tournament outcomes:
